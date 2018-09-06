@@ -14,21 +14,27 @@ class EmojisData {
     var natureList: [Emojis] = []
     var foodList: [Emojis] = []
     var activityList: [Emojis] = []
+    var allEmojiesList = [Emojis]()
     static let shared = EmojisData()
     
-    func getData(page: Int) {
+    func getData(page: Int, keyboard: Bool) {
         Alamofire.request("http://emodji.site/emojies/categories/\(page)").responseJSON { [weak self] (response) in
             if let unparsedEmojis = response.result.value as? [[String: Any]] {
                 for emojis in unparsedEmojis {
                     let emojiList: Emojis = Emojis(dict: emojis)
-                    if page == 1 {
-                        self?.smileysList.append(emojiList)
-                    } else if page == 2 {
-                        self?.natureList.append(emojiList)
-                    } else if page == 3 {
-                        self?.foodList.append(emojiList)
-                    } else if page == 4 {
-                        self?.activityList.append(emojiList)
+                    
+                    if !keyboard {
+                        if page == 1 {
+                            self?.smileysList.append(emojiList)
+                        } else if page == 2 {
+                            self?.natureList.append(emojiList)
+                        } else if page == 3 {
+                            self?.foodList.append(emojiList)
+                        } else if page == 4 {
+                            self?.activityList.append(emojiList)
+                        }
+                    } else {
+                        self?.allEmojiesList.append(emojiList)
                     }
                 }
                 NotificationCenter.default.post(name: Notification.Name("emojis"), object: nil)

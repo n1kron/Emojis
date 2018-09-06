@@ -18,6 +18,10 @@
 		99165F642141761700B5E71D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99165F632141761700B5E71D /* Alamofire.framework */; };
 		99165F662141769B00B5E71D /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F652141769B00B5E71D /* ActivityViewController.swift */; };
 		99165F682141787900B5E71D /* Utiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F672141787900B5E71D /* Utiles.swift */; };
+		99165F69214186B500B5E71D /* Emojis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F5F214171A200B5E71D /* Emojis.swift */; };
+		99165F6A214186BC00B5E71D /* EmojisData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F5D2141715400B5E71D /* EmojisData.swift */; };
+		99165F6C214186CD00B5E71D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99165F6B214186CD00B5E71D /* Alamofire.framework */; };
+		99165F6E214186D100B5E71D /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99165F6D214186D100B5E71D /* Kingfisher.framework */; };
 		996F5BFF21396643008BA54F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5BFE21396643008BA54F /* AppDelegate.swift */; };
 		996F5C0121396643008BA54F /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5C0021396643008BA54F /* FoodViewController.swift */; };
 		996F5C0421396643008BA54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 996F5C0221396643008BA54F /* Main.storyboard */; };
@@ -94,6 +98,10 @@
 		99165F632141761700B5E71D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99165F652141769B00B5E71D /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		99165F672141787900B5E71D /* Utiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utiles.swift; sourceTree = "<group>"; };
+		99165F6B214186CD00B5E71D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99165F6D214186D100B5E71D /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99165F6F21418B3400B5E71D /* Emojis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Emojis.entitlements; sourceTree = "<group>"; };
+		99165F7021418B4600B5E71D /* EmojiKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EmojiKeyboard.entitlements; sourceTree = "<group>"; };
 		996F5BFB21396643008BA54F /* Emojis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emojis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		996F5BFE21396643008BA54F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		996F5C0021396643008BA54F /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +158,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99165F6E214186D100B5E71D /* Kingfisher.framework in Frameworks */,
+				99165F6C214186CD00B5E71D /* Alamofire.framework in Frameworks */,
 				855E00132B0E22ECD37338BE /* Pods_EmojiKeyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +170,8 @@
 		516928B9CCA5AE1FE53FD413 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99165F6D214186D100B5E71D /* Kingfisher.framework */,
+				99165F6B214186CD00B5E71D /* Alamofire.framework */,
 				99165F632141761700B5E71D /* Alamofire.framework */,
 				99165F612141761400B5E71D /* Kingfisher.framework */,
 				F1BA8BF5742B1E84D2D1BC1E /* Pods_EmojiKeyboard.framework */,
@@ -203,6 +215,7 @@
 		996F5BFD21396643008BA54F /* Emojis */ = {
 			isa = PBXGroup;
 			children = (
+				99165F6F21418B3400B5E71D /* Emojis.entitlements */,
 				996F5BFE21396643008BA54F /* AppDelegate.swift */,
 				996F5C0A21396645008BA54F /* Info.plist */,
 				99165F5C214170BE00B5E71D /* Model */,
@@ -234,6 +247,7 @@
 		996F5C31213966FB008BA54F /* EmojiKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				99165F7021418B4600B5E71D /* EmojiKeyboard.entitlements */,
 				996F5C32213966FB008BA54F /* KeyboardViewController.swift */,
 				996F5C34213966FB008BA54F /* Info.plist */,
 			);
@@ -403,6 +417,11 @@
 				TargetAttributes = {
 					996F5BFA21396643008BA54F = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					996F5C0E21396645008BA54F = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -414,6 +433,11 @@
 					};
 					996F5C2F213966FB008BA54F = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -581,7 +605,9 @@
 			files = (
 				996F5C492139910B008BA54F /* KeyboardView.swift in Sources */,
 				999A3126213FF5EF000D3993 /* Cells.swift in Sources */,
+				99165F69214186B500B5E71D /* Emojis.swift in Sources */,
 				996F5C33213966FB008BA54F /* KeyboardViewController.swift in Sources */,
+				99165F6A214186BC00B5E71D /* EmojisData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -863,6 +889,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 538A4D243FCFA1ED2A6A8D68 /* Pods-EmojiKeyboard.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5C8ZLNKV2V;
 				INFOPLIST_FILE = EmojiKeyboard/Info.plist;
@@ -884,6 +911,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FC3DA9F5792B840656122795 /* Pods-EmojiKeyboard.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5C8ZLNKV2V;
 				INFOPLIST_FILE = EmojiKeyboard/Info.plist;

@@ -16,7 +16,7 @@ class SmileysViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Utiles.shared.configureFlowLayout(collectionView)
-        EmojisData.shared.getData(page: 1)
+        EmojisData.shared.getData(page: 1, keyboard: false)
         NotificationCenter.default.addObserver(forName: Notification.Name("emojis"), object: nil, queue: nil) { [weak self] (notification) in
             self?.collectionView.reloadData()
         }
