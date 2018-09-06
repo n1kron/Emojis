@@ -9,15 +9,11 @@
 import UIKit
 import Foundation
 
-protocol KeyboardViewDelegate: class {
-    func deletePressed()
-}
-
 class KeyboardView: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet weak var backspaceButton: UIButton!
     @IBOutlet var nextKeyboardButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
-    weak var delegate: KeyboardViewDelegate?
     
     class func instanceFromNib() -> KeyboardView {
         return UINib(nibName: "KeyboardView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! KeyboardView
@@ -47,9 +43,5 @@ class KeyboardView: UIView, UICollectionViewDelegate, UICollectionViewDataSource
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "KeyboardCollectionViewCell", for: indexPath)
         cell.backgroundColor = .red
         return cell
-    }
-    
-    @IBAction func deletePressed() {
-        delegate?.deletePressed()
     }
 }

@@ -19,25 +19,21 @@
                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHc-WH-ve7">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zgy-wb-gRK">
                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                        <state key="normal" image="next_keyboard"/>
-                    </button>
+                    </imageView>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="FHc-WH-ve7" firstAttribute="top" secondItem="202-DJ-L9P" secondAttribute="top" id="Wrp-MG-ZjC"/>
-                <constraint firstItem="FHc-WH-ve7" firstAttribute="leading" secondItem="202-DJ-L9P" secondAttribute="leading" id="kdq-UI-r6R"/>
-                <constraint firstAttribute="trailing" secondItem="FHc-WH-ve7" secondAttribute="trailing" id="mse-YV-jBg"/>
-                <constraint firstAttribute="bottom" secondItem="FHc-WH-ve7" secondAttribute="bottom" id="wX1-lv-IOc"/>
+                <constraint firstItem="zgy-wb-gRK" firstAttribute="leading" secondItem="202-DJ-L9P" secondAttribute="leading" id="Qlc-9E-9f5"/>
+                <constraint firstAttribute="bottom" secondItem="zgy-wb-gRK" secondAttribute="bottom" id="Ywm-dt-gyn"/>
+                <constraint firstAttribute="trailing" secondItem="zgy-wb-gRK" secondAttribute="trailing" id="cH8-3G-Nmz"/>
+                <constraint firstItem="zgy-wb-gRK" firstAttribute="top" secondItem="202-DJ-L9P" secondAttribute="top" id="fFV-m4-Gfk"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Uly-ij-Sjv"/>
             <connections>
-                <outlet property="keyboardButton" destination="FHc-WH-ve7" id="Drk-rc-YOS"/>
+                <outlet property="imageView" destination="zgy-wb-gRK" id="JRY-ij-7d7"/>
             </connections>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="next_keyboard" width="33" height="33"/>
-    </resources>
 </document>

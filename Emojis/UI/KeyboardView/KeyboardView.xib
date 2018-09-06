@@ -26,9 +26,6 @@
                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                     <state key="normal" image="backspace"/>
-                    <connections>
-                        <action selector="deletePressed" destination="iN0-l3-epB" eventType="touchUpInside" id="c1h-3i-PeZ"/>
-                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULs-cd-5tM">
                     <rect key="frame" x="0.0" y="155" width="45" height="45"/>
@@ -66,6 +63,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="backspaceButton" destination="mXA-Kr-9BE" id="mQV-3Y-5s6"/>
                 <outlet property="collectionView" destination="gT3-jP-opx" id="EYo-pX-cVT"/>
                 <outlet property="nextKeyboardButton" destination="ULs-cd-5tM" id="AJH-HJ-I2S"/>
             </connections>

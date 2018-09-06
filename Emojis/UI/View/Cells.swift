@@ -9,7 +9,7 @@
 import UIKit
 
 class KeyboardCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var keyboardButton: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
 }
 
 class SmileysCollectionViewCell: UICollectionViewCell {

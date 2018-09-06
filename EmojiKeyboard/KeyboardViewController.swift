@@ -22,7 +22,6 @@ class KeyboardViewController: UIInputViewController {
         let nib = UINib(nibName: "KeyboardView", bundle: nil)
         let objects = nib.instantiate(withOwner: nil, options: nil)
         delegateKeyboardView = objects.first as! KeyboardView
-        delegateKeyboardView.delegate = self
         
         let keyboardView = KeyboardView.instanceFromNib()
         keyboardView.collectionView.register(UINib.init(nibName: "KeyboardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "KeyboardCollectionViewCell")
@@ -37,19 +36,17 @@ class KeyboardViewController: UIInputViewController {
             ])
         
         keyboardView.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
-        
+        keyboardView.backspaceButton.addTarget(self, action: #selector(backspace), for: .allTouchEvents)
+    }
+    
+    @objc func backspace() {
+        let proxy = textDocumentProxy as UITextDocumentProxy
+        proxy.deleteBackward()
     }
     
     override func textWillChange(_ textInput: UITextInput?) {
     }
     
     override func textDidChange(_ textInput: UITextInput?) {
-    }
-}
-
-extension KeyboardViewController: KeyboardViewDelegate {
-    func deletePressed() {
-        let proxy = textDocumentProxy as UITextDocumentProxy
-        proxy.deleteBackward()
     }
 }
