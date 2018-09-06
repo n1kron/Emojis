@@ -44,7 +44,7 @@ class KeyboardViewController: UIInputViewController {
             ])
         
         keyboardView.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
-        keyboardView.backspaceButton.addTarget(self, action: #selector(backspace), for: .allTouchEvents)
+        keyboardView.backspaceButton.addTarget(self, action: #selector(backspace), for: .touchUpInside)
         
         NotificationCenter.default.addObserver(forName: Notification.Name("emojis"), object: nil, queue: nil) {(notification) in
             keyboardView.collectionView.reloadData()
@@ -80,9 +80,10 @@ extension KeyboardViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "KeyboardCollectionViewCell", for: indexPath) as! KeyboardCollectionViewCell
-        let image = EmojisData.shared.smileysList[indexPath.row].smallImage
-        cell.imageView.kf.setImage(with: URL(string: image), completionHandler: { (image, error, cacheType, imageUrl) in
-        })
+            let image = EmojisData.shared.allEmojiesList[indexPath.row].smallImage
+            cell.imageView.kf.setImage(with: URL(string: image), completionHandler: { (image, error, cacheType, imageUrl) in
+            })
+        
         return cell
     }
 }

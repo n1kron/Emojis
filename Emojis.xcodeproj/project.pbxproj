@@ -73,7 +73,7 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		996F5C3B213966FB008BA54F /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
@@ -100,8 +100,6 @@
 		99165F672141787900B5E71D /* Utiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utiles.swift; sourceTree = "<group>"; };
 		99165F6B214186CD00B5E71D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99165F6D214186D100B5E71D /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		99165F6F21418B3400B5E71D /* Emojis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Emojis.entitlements; sourceTree = "<group>"; };
-		99165F7021418B4600B5E71D /* EmojiKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EmojiKeyboard.entitlements; sourceTree = "<group>"; };
 		996F5BFB21396643008BA54F /* Emojis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emojis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		996F5BFE21396643008BA54F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		996F5C0021396643008BA54F /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
@@ -215,7 +213,6 @@
 		996F5BFD21396643008BA54F /* Emojis */ = {
 			isa = PBXGroup;
 			children = (
-				99165F6F21418B3400B5E71D /* Emojis.entitlements */,
 				996F5BFE21396643008BA54F /* AppDelegate.swift */,
 				996F5C0A21396645008BA54F /* Info.plist */,
 				99165F5C214170BE00B5E71D /* Model */,
@@ -247,7 +244,6 @@
 		996F5C31213966FB008BA54F /* EmojiKeyboard */ = {
 			isa = PBXGroup;
 			children = (
-				99165F7021418B4600B5E71D /* EmojiKeyboard.entitlements */,
 				996F5C32213966FB008BA54F /* KeyboardViewController.swift */,
 				996F5C34213966FB008BA54F /* Info.plist */,
 			);

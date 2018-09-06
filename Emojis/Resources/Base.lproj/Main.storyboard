@@ -613,14 +613,25 @@
                                     <action selector="termOfUseAction:" destination="8Rs-k1-KEg" eventType="touchUpInside" id="OFB-Df-T0f"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OAA-9O-8l1">
+                                <rect key="frame" x="112.5" y="318.5" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="8Ca-02-JnJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="feG-NM-G59" firstAttribute="top" secondItem="ITI-Xe-Fj4" secondAttribute="bottom" constant="20" id="5tf-35-1YX"/>
                             <constraint firstItem="HrR-ir-pyx" firstAttribute="centerX" secondItem="J6g-t9-Qnd" secondAttribute="centerX" id="F4S-Jn-NcV"/>
+                            <constraint firstItem="OAA-9O-8l1" firstAttribute="centerY" secondItem="J6g-t9-Qnd" secondAttribute="centerY" id="HhD-BB-mTd"/>
                             <constraint firstItem="HrR-ir-pyx" firstAttribute="width" secondItem="J6g-t9-Qnd" secondAttribute="width" multiplier="0.5" id="Nwo-b0-ba8"/>
                             <constraint firstItem="ITI-Xe-Fj4" firstAttribute="leading" secondItem="feG-NM-G59" secondAttribute="leading" id="SHG-mC-ard"/>
                             <constraint firstItem="ITI-Xe-Fj4" firstAttribute="trailing" secondItem="feG-NM-G59" secondAttribute="trailing" id="ZL1-Qi-nfu"/>
+                            <constraint firstItem="OAA-9O-8l1" firstAttribute="centerX" secondItem="J6g-t9-Qnd" secondAttribute="centerX" id="eMd-bw-Q6q"/>
                             <constraint firstItem="6Wp-jA-otU" firstAttribute="centerY" secondItem="J6g-t9-Qnd" secondAttribute="centerY" multiplier="1.4" id="gyG-UX-gmv"/>
                             <constraint firstItem="6Wp-jA-otU" firstAttribute="width" secondItem="J6g-t9-Qnd" secondAttribute="width" multiplier="0.7" id="jPA-gD-efb"/>
                             <constraint firstItem="ITI-Xe-Fj4" firstAttribute="top" secondItem="6Wp-jA-otU" secondAttribute="bottom" constant="20" id="lLO-zV-016"/>
