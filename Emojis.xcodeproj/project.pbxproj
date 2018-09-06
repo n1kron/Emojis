@@ -10,10 +10,16 @@
 		566B57A3B0515EDC49D62044 /* Pods_Emojis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB2EF1580B35D2B13B2C437 /* Pods_Emojis.framework */; };
 		855E00132B0E22ECD37338BE /* Pods_EmojiKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BA8BF5742B1E84D2D1BC1E /* Pods_EmojiKeyboard.framework */; };
 		99165EF921408A6100B5E71D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165EF821408A6100B5E71D /* TabBarViewController.swift */; };
-		99165EFB21408C8300B5E71D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165EFA21408C8300B5E71D /* FirstViewController.swift */; };
-		99165EFD21408C9300B5E71D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165EFC21408C9300B5E71D /* SecondViewController.swift */; };
+		99165EFB21408C8300B5E71D /* SmileysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165EFA21408C8300B5E71D /* SmileysViewController.swift */; };
+		99165EFD21408C9300B5E71D /* NatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165EFC21408C9300B5E71D /* NatureViewController.swift */; };
+		99165F5E2141715400B5E71D /* EmojisData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F5D2141715400B5E71D /* EmojisData.swift */; };
+		99165F60214171A200B5E71D /* Emojis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F5F214171A200B5E71D /* Emojis.swift */; };
+		99165F622141761400B5E71D /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99165F612141761400B5E71D /* Kingfisher.framework */; };
+		99165F642141761700B5E71D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99165F632141761700B5E71D /* Alamofire.framework */; };
+		99165F662141769B00B5E71D /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F652141769B00B5E71D /* ActivityViewController.swift */; };
+		99165F682141787900B5E71D /* Utiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F672141787900B5E71D /* Utiles.swift */; };
 		996F5BFF21396643008BA54F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5BFE21396643008BA54F /* AppDelegate.swift */; };
-		996F5C0121396643008BA54F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5C0021396643008BA54F /* ThirdViewController.swift */; };
+		996F5C0121396643008BA54F /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5C0021396643008BA54F /* FoodViewController.swift */; };
 		996F5C0421396643008BA54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 996F5C0221396643008BA54F /* Main.storyboard */; };
 		996F5C0621396645008BA54F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996F5C0521396645008BA54F /* Assets.xcassets */; };
 		996F5C0921396645008BA54F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 996F5C0721396645008BA54F /* LaunchScreen.storyboard */; };
@@ -21,7 +27,6 @@
 		996F5C1F21396645008BA54F /* EmojisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5C1E21396645008BA54F /* EmojisUITests.swift */; };
 		996F5C33213966FB008BA54F /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5C32213966FB008BA54F /* KeyboardViewController.swift */; };
 		996F5C37213966FB008BA54F /* EmojiKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 996F5C30213966FB008BA54F /* EmojiKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		996F5C3E21396E21008BA54F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5C0021396643008BA54F /* ThirdViewController.swift */; };
 		996F5C4421396FDB008BA54F /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 996F5C4321396FDB008BA54F /* KeyboardView.xib */; };
 		996F5C4521396FE5008BA54F /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 996F5C4321396FDB008BA54F /* KeyboardView.xib */; };
 		996F5C4621397DE7008BA54F /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5C32213966FB008BA54F /* KeyboardViewController.swift */; };
@@ -81,11 +86,17 @@
 		538A4D243FCFA1ED2A6A8D68 /* Pods-EmojiKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmojiKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmojiKeyboard/Pods-EmojiKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
 		8672C5AE5FD364DCD0071F10 /* Pods-Emojis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emojis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Emojis/Pods-Emojis.debug.xcconfig"; sourceTree = "<group>"; };
 		99165EF821408A6100B5E71D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		99165EFA21408C8300B5E71D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		99165EFC21408C9300B5E71D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		99165EFA21408C8300B5E71D /* SmileysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileysViewController.swift; sourceTree = "<group>"; };
+		99165EFC21408C9300B5E71D /* NatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureViewController.swift; sourceTree = "<group>"; };
+		99165F5D2141715400B5E71D /* EmojisData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojisData.swift; sourceTree = "<group>"; };
+		99165F5F214171A200B5E71D /* Emojis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emojis.swift; sourceTree = "<group>"; };
+		99165F612141761400B5E71D /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99165F632141761700B5E71D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99165F652141769B00B5E71D /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		99165F672141787900B5E71D /* Utiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utiles.swift; sourceTree = "<group>"; };
 		996F5BFB21396643008BA54F /* Emojis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emojis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		996F5BFE21396643008BA54F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		996F5C0021396643008BA54F /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		996F5C0021396643008BA54F /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		996F5C0321396643008BA54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		996F5C0521396645008BA54F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		996F5C0821396645008BA54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,6 +126,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99165F642141761700B5E71D /* Alamofire.framework in Frameworks */,
+				99165F622141761400B5E71D /* Kingfisher.framework in Frameworks */,
 				566B57A3B0515EDC49D62044 /* Pods_Emojis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,10 +160,20 @@
 		516928B9CCA5AE1FE53FD413 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99165F632141761700B5E71D /* Alamofire.framework */,
+				99165F612141761400B5E71D /* Kingfisher.framework */,
 				F1BA8BF5742B1E84D2D1BC1E /* Pods_EmojiKeyboard.framework */,
 				4CB2EF1580B35D2B13B2C437 /* Pods_Emojis.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99165F5C214170BE00B5E71D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99165F5F214171A200B5E71D /* Emojis.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		996F5BF221396643008BA54F = {
@@ -182,6 +205,7 @@
 			children = (
 				996F5BFE21396643008BA54F /* AppDelegate.swift */,
 				996F5C0A21396645008BA54F /* Info.plist */,
+				99165F5C214170BE00B5E71D /* Model */,
 				999A31272140113C000D3993 /* Services */,
 				996F5C3C21396DB3008BA54F /* UI */,
 				996F5C3D21396DC5008BA54F /* Resources */,
@@ -257,9 +281,10 @@
 		999A3123213FF3FF000D3993 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				99165EFA21408C8300B5E71D /* FirstViewController.swift */,
-				99165EFC21408C9300B5E71D /* SecondViewController.swift */,
-				996F5C0021396643008BA54F /* ThirdViewController.swift */,
+				99165EFA21408C8300B5E71D /* SmileysViewController.swift */,
+				99165EFC21408C9300B5E71D /* NatureViewController.swift */,
+				996F5C0021396643008BA54F /* FoodViewController.swift */,
+				99165F652141769B00B5E71D /* ActivityViewController.swift */,
 				999A3120213FF1AF000D3993 /* InformationViewController.swift */,
 				999A312821402F63000D3993 /* ExplanationsViewController.swift */,
 				99165EF821408A6100B5E71D /* TabBarViewController.swift */,
@@ -270,7 +295,9 @@
 		999A31272140113C000D3993 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				99165F5D2141715400B5E71D /* EmojisData.swift */,
 				999A312A21404219000D3993 /* Consts.swift */,
+				99165F672141787900B5E71D /* Utiles.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -514,15 +541,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99165EFD21408C9300B5E71D /* SecondViewController.swift in Sources */,
-				996F5C0121396643008BA54F /* ThirdViewController.swift in Sources */,
+				99165F5E2141715400B5E71D /* EmojisData.swift in Sources */,
+				99165EFD21408C9300B5E71D /* NatureViewController.swift in Sources */,
+				996F5C0121396643008BA54F /* FoodViewController.swift in Sources */,
+				99165F60214171A200B5E71D /* Emojis.swift in Sources */,
 				999A312B21404219000D3993 /* Consts.swift in Sources */,
 				999A3125213FF422000D3993 /* Cells.swift in Sources */,
 				996F5BFF21396643008BA54F /* AppDelegate.swift in Sources */,
 				99165EF921408A6100B5E71D /* TabBarViewController.swift in Sources */,
-				99165EFB21408C8300B5E71D /* FirstViewController.swift in Sources */,
+				99165EFB21408C8300B5E71D /* SmileysViewController.swift in Sources */,
+				99165F682141787900B5E71D /* Utiles.swift in Sources */,
 				996F5C4821398E90008BA54F /* KeyboardView.swift in Sources */,
 				996F5C4621397DE7008BA54F /* KeyboardViewController.swift in Sources */,
+				99165F662141769B00B5E71D /* ActivityViewController.swift in Sources */,
 				999A312921402F63000D3993 /* ExplanationsViewController.swift in Sources */,
 				999A3121213FF1AF000D3993 /* InformationViewController.swift in Sources */,
 			);
@@ -550,7 +581,6 @@
 			files = (
 				996F5C492139910B008BA54F /* KeyboardView.swift in Sources */,
 				999A3126213FF5EF000D3993 /* Cells.swift in Sources */,
-				996F5C3E21396E21008BA54F /* ThirdViewController.swift in Sources */,
 				996F5C33213966FB008BA54F /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

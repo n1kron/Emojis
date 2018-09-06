@@ -1,33 +1,36 @@
 //
-//  SecondViewController.swift
+//  ViewController.swift
 //  Emojis
 //
-//  Created by  Kostantin Zarubin on 06.09.2018.
+//  Created by  Kostantin Zarubin on 31.08.2018.
 //  Copyright © 2018  Kostantin Zarubin. All rights reserved.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class FoodViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let collectionViewLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
-        collectionViewLayout?.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
-        collectionViewLayout?.itemSize = CGSize(width: UIScreen.main.bounds.size.width * 0.2, height: UIScreen.main.bounds.size.width * 0.2)
-        collectionViewLayout?.invalidateLayout()
+        Utiles.shared.configureFlowLayout(collectionView)
+        EmojisData.shared.getData(page: 3)
+        NotificationCenter.default.addObserver(forName: Notification.Name("emojis"), object: nil, queue: nil) { [weak self] (notification) in
+            self?.collectionView.reloadData()
+        }
     }
 }
 
-extension SecondViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension FoodViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 60
+        return EmojisData.shared.foodList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SecondCollectionViewCell", for: indexPath) as! SecondCollectionViewCell
-        cell.backgroundColor = .green
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ThirdCollectionViewCell", for: indexPath) as! FoodCollectionViewCell
+        let image = EmojisData.shared.foodList[indexPath.row].bigImage
+        cell.imageView.kf.setImage(with: URL(string: image), completionHandler: { (image, error, cacheType, imageUrl) in
+        })
         return cell
     }
     
@@ -40,3 +43,4 @@ extension SecondViewController: UICollectionViewDelegate, UICollectionViewDataSo
         self.present(alert, animated: true, completion: nil)
     }
 }
+

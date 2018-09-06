@@ -7,29 +7,32 @@
 //
 
 import UIKit
+import Kingfisher
 
-class FirstViewController: UIViewController {
+class SmileysViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var topConstraint: NSLayoutConstraint!
+    @IBOutlet weak var topConstraint: NSLayoutConstraint! // fix this
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        topConstraint.constant = (self.navigationController?.navigationBar.frame.size.height)!
-        let collectionViewLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
-        collectionViewLayout?.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
-        collectionViewLayout?.itemSize = CGSize(width: UIScreen.main.bounds.size.width * 0.2, height: UIScreen.main.bounds.size.width * 0.2)
-        collectionViewLayout?.invalidateLayout()
+        Utiles.shared.configureFlowLayout(collectionView)
+        EmojisData.shared.getData(page: 1)
+        NotificationCenter.default.addObserver(forName: Notification.Name("emojis"), object: nil, queue: nil) { [weak self] (notification) in
+            self?.collectionView.reloadData()
+        }
     }
 }
 
-extension FirstViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension SmileysViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 60
+        return EmojisData.shared.smileysList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FirstCollectionViewCell", for: indexPath) as! FirstCollectionViewCell
-        cell.backgroundColor = .red
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FirstCollectionViewCell", for: indexPath) as! SmileysCollectionViewCell
+        let image = EmojisData.shared.smileysList[indexPath.row].bigImage
+        cell.imageView.kf.setImage(with: URL(string: image), completionHandler: { (image, error, cacheType, imageUrl) in
+        })
         return cell
     }
     

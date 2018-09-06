@@ -1,33 +1,36 @@
 //
-//  ViewController.swift
+//  SecondViewController.swift
 //  Emojis
 //
-//  Created by  Kostantin Zarubin on 31.08.2018.
+//  Created by  Kostantin Zarubin on 06.09.2018.
 //  Copyright © 2018  Kostantin Zarubin. All rights reserved.
 //
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class NatureViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let collectionViewLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
-        collectionViewLayout?.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
-        collectionViewLayout?.itemSize = CGSize(width: UIScreen.main.bounds.size.width * 0.2, height: UIScreen.main.bounds.size.width * 0.2)
-        collectionViewLayout?.invalidateLayout()
+        Utiles.shared.configureFlowLayout(collectionView)
+        EmojisData.shared.getData(page: 2)
+        NotificationCenter.default.addObserver(forName: Notification.Name("emojis"), object: nil, queue: nil) { [weak self] (notification) in
+            self?.collectionView.reloadData()
+        }
     }
 }
 
-extension ThirdViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension NatureViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 60
+        return EmojisData.shared.natureList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ThirdCollectionViewCell", for: indexPath) as! ThirdCollectionViewCell
-        cell.backgroundColor = .blue
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SecondCollectionViewCell", for: indexPath) as! NatureCollectionViewCell
+        let image = EmojisData.shared.natureList[indexPath.row].bigImage
+        cell.imageView.kf.setImage(with: URL(string: image), completionHandler: { (image, error, cacheType, imageUrl) in
+        })
         return cell
     }
     
@@ -40,4 +43,3 @@ extension ThirdViewController: UICollectionViewDelegate, UICollectionViewDataSou
         self.present(alert, animated: true, completion: nil)
     }
 }
-

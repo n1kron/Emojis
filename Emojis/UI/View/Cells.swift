@@ -12,14 +12,18 @@ class KeyboardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var keyboardButton: UIButton!
 }
 
-class FirstCollectionViewCell: UICollectionViewCell {
+class SmileysCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
 }
 
-class SecondCollectionViewCell: UICollectionViewCell {
+class NatureCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
 }
 
-class ThirdCollectionViewCell: UICollectionViewCell {
+class FoodCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var imageView: UIImageView!
+}
+
+class ActivityCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
 }
