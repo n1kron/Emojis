@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KeyboardView" customModule="EmojiKeyboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXA-Kr-9BE">
+                    <rect key="frame" x="330" y="155" width="45" height="45"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="0u0-IO-9iq"/>
+                        <constraint firstAttribute="height" constant="45" id="tTX-Pf-6UM"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                    <state key="normal" image="backspace"/>
+                    <connections>
+                        <action selector="deletePressed" destination="iN0-l3-epB" eventType="touchUpInside" id="c1h-3i-PeZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULs-cd-5tM">
+                    <rect key="frame" x="0.0" y="155" width="45" height="45"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="3uX-4p-JwH"/>
+                        <constraint firstAttribute="height" constant="45" id="AA7-nB-Qkj"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                    <state key="normal" image="next_keyboard"/>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT3-jP-opx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="2" minimumInteritemSpacing="2" id="OqF-lF-kCg">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gT3-jP-opx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9kG-aB-D9p"/>
+                <constraint firstItem="ULs-cd-5tM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Bvn-qM-pTK"/>
+                <constraint firstItem="gT3-jP-opx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Cxz-SB-H0x"/>
+                <constraint firstItem="ULs-cd-5tM" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="FuP-vu-Kn4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mXA-Kr-9BE" secondAttribute="trailing" id="MBW-OO-wBU"/>
+                <constraint firstItem="gT3-jP-opx" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="ahp-X1-Nn3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mXA-Kr-9BE" secondAttribute="bottom" id="c9N-45-4H6"/>
+                <constraint firstItem="ULs-cd-5tM" firstAttribute="top" secondItem="gT3-jP-opx" secondAttribute="bottom" id="hYz-2T-xsA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="collectionView" destination="gT3-jP-opx" id="EYo-pX-cVT"/>
+                <outlet property="nextKeyboardButton" destination="ULs-cd-5tM" id="AJH-HJ-I2S"/>
+            </connections>
+            <point key="canvasLocation" x="40.5" y="-0.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backspace" width="33" height="33"/>
+        <image name="next_keyboard" width="33" height="33"/>
+    </resources>
+</document>

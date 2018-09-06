@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="KeyboardCollectionViewCell" id="202-DJ-L9P" customClass="KeyboardCollectionViewCell" customModule="EmojiKeyboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHc-WH-ve7">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <state key="normal" image="next_keyboard"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="FHc-WH-ve7" firstAttribute="top" secondItem="202-DJ-L9P" secondAttribute="top" id="Wrp-MG-ZjC"/>
+                <constraint firstItem="FHc-WH-ve7" firstAttribute="leading" secondItem="202-DJ-L9P" secondAttribute="leading" id="kdq-UI-r6R"/>
+                <constraint firstAttribute="trailing" secondItem="FHc-WH-ve7" secondAttribute="trailing" id="mse-YV-jBg"/>
+                <constraint firstAttribute="bottom" secondItem="FHc-WH-ve7" secondAttribute="bottom" id="wX1-lv-IOc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Uly-ij-Sjv"/>
+            <connections>
+                <outlet property="keyboardButton" destination="FHc-WH-ve7" id="Drk-rc-YOS"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="next_keyboard" width="33" height="33"/>
+    </resources>
+</document>
