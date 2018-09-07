@@ -12,11 +12,13 @@ class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "App Name"
         navigationController?.navigationBar.barTintColor = UIColor(red: 208/255, green: 247/255, blue: 232/255, alpha: 1.0)
     }
     
     override func viewDidLayoutSubviews() {
-        tabBar.frame = CGRect(x: 0, y: (self.navigationController?.navigationBar.frame.size.height)!, width: tabBar.frame.size.width, height: tabBar.frame.size.height)
+        self.edgesForExtendedLayout = UIRectEdge.bottom
+        tabBar.frame = CGRect(x: 0, y: 0, width: tabBar.frame.size.width, height: tabBar.frame.size.height)
         
         super.viewDidLayoutSubviews()
     }

@@ -11,7 +11,6 @@ import Kingfisher
 
 class SmileysViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var topConstraint: NSLayoutConstraint! // fix this
     
     override func viewDidLoad() {
         super.viewDidLoad()

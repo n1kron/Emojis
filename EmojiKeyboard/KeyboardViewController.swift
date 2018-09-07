@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import Alamofire
 
 class KeyboardViewController: UIInputViewController {
     
@@ -74,8 +75,14 @@ extension KeyboardViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let image = UIImage(named: "next_keyboard") // CHANGE IT TO REAL EMOJI
-        UIPasteboard.general.image = image
+        let imageUrl = URL(string: EmojisData.shared.allEmojiesList[indexPath.row].smallImage)
+        if let data = try? Data(contentsOf: imageUrl!) {
+            if let image = UIImage(data: data) {
+                DispatchQueue.main.async {
+                    UIPasteboard.general.image = image
+                }
+            }
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
