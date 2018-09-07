@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		566B57A3B0515EDC49D62044 /* Pods_Emojis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB2EF1580B35D2B13B2C437 /* Pods_Emojis.framework */; };
+		0BAD562A3B329BF1877D6DF4 /* Pods_Mr__Emoji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8194F688B9C05BDCB449AF5B /* Pods_Mr__Emoji.framework */; };
 		855E00132B0E22ECD37338BE /* Pods_EmojiKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BA8BF5742B1E84D2D1BC1E /* Pods_EmojiKeyboard.framework */; };
 		99165EF921408A6100B5E71D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165EF821408A6100B5E71D /* TabBarViewController.swift */; };
 		99165EFB21408C8300B5E71D /* SmileysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165EFA21408C8300B5E71D /* SmileysViewController.swift */; };
@@ -87,9 +87,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		34F14D522F0CB68576B00619 /* Pods-Mr. Emoji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mr. Emoji.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mr. Emoji/Pods-Mr. Emoji.release.xcconfig"; sourceTree = "<group>"; };
 		35A2DA64972035BA3CF7FA80 /* Pods-Emojis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emojis.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emojis/Pods-Emojis.release.xcconfig"; sourceTree = "<group>"; };
 		4CB2EF1580B35D2B13B2C437 /* Pods_Emojis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emojis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		538A4D243FCFA1ED2A6A8D68 /* Pods-EmojiKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmojiKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmojiKeyboard/Pods-EmojiKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		8194F688B9C05BDCB449AF5B /* Pods_Mr__Emoji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mr__Emoji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8672C5AE5FD364DCD0071F10 /* Pods-Emojis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emojis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Emojis/Pods-Emojis.debug.xcconfig"; sourceTree = "<group>"; };
 		99165EF821408A6100B5E71D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		99165EFA21408C8300B5E71D /* SmileysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileysViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		999A3124213FF422000D3993 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		999A312821402F63000D3993 /* ExplanationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationsViewController.swift; sourceTree = "<group>"; };
 		999A312A21404219000D3993 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		C291F11DFB4C1C557787D305 /* Pods-Mr. Emoji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mr. Emoji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mr. Emoji/Pods-Mr. Emoji.debug.xcconfig"; sourceTree = "<group>"; };
 		F1BA8BF5742B1E84D2D1BC1E /* Pods_EmojiKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmojiKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3DA9F5792B840656122795 /* Pods-EmojiKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmojiKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmojiKeyboard/Pods-EmojiKeyboard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,7 +139,7 @@
 			files = (
 				99165F642141761700B5E71D /* Alamofire.framework in Frameworks */,
 				99165F622141761400B5E71D /* Kingfisher.framework in Frameworks */,
-				566B57A3B0515EDC49D62044 /* Pods_Emojis.framework in Frameworks */,
+				0BAD562A3B329BF1877D6DF4 /* Pods_Mr__Emoji.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +179,7 @@
 				99165F612141761400B5E71D /* Kingfisher.framework */,
 				F1BA8BF5742B1E84D2D1BC1E /* Pods_EmojiKeyboard.framework */,
 				4CB2EF1580B35D2B13B2C437 /* Pods_Emojis.framework */,
+				8194F688B9C05BDCB449AF5B /* Pods_Mr__Emoji.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -321,6 +325,8 @@
 				FC3DA9F5792B840656122795 /* Pods-EmojiKeyboard.release.xcconfig */,
 				8672C5AE5FD364DCD0071F10 /* Pods-Emojis.debug.xcconfig */,
 				35A2DA64972035BA3CF7FA80 /* Pods-Emojis.release.xcconfig */,
+				C291F11DFB4C1C557787D305 /* Pods-Mr. Emoji.debug.xcconfig */,
+				34F14D522F0CB68576B00619 /* Pods-Mr. Emoji.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -506,7 +512,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Emojis/Pods-Emojis-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mr. Emoji/Pods-Mr. Emoji-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
@@ -517,7 +523,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Emojis/Pods-Emojis-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mr. Emoji/Pods-Mr. Emoji-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D1A6F5854DDFD7B499BF64D8 /* [CP] Check Pods Manifest.lock */ = {
@@ -531,7 +537,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Emojis-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Mr. Emoji-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -767,7 +773,7 @@
 		};
 		996F5C2421396645008BA54F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8672C5AE5FD364DCD0071F10 /* Pods-Emojis.debug.xcconfig */;
+			baseConfigurationReference = C291F11DFB4C1C557787D305 /* Pods-Mr. Emoji.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -788,7 +794,7 @@
 		};
 		996F5C2521396645008BA54F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35A2DA64972035BA3CF7FA80 /* Pods-Emojis.release.xcconfig */;
+			baseConfigurationReference = 34F14D522F0CB68576B00619 /* Pods-Mr. Emoji.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
