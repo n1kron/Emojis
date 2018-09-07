@@ -16,8 +16,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXA-Kr-9BE">
-                    <rect key="frame" x="330" y="155" width="45" height="45"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXA-Kr-9BE" customClass="KeyboardButton" customModule="EmojiKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="325" y="150" width="45" height="45"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="45" id="0u0-IO-9iq"/>
@@ -27,8 +27,8 @@
                     <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                     <state key="normal" image="backspace"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULs-cd-5tM">
-                    <rect key="frame" x="0.0" y="155" width="45" height="45"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULs-cd-5tM" customClass="KeyboardButton" customModule="EmojiKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="5" y="150" width="45" height="45"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="45" id="3uX-4p-JwH"/>
@@ -39,7 +39,7 @@
                     <state key="normal" image="next_keyboard"/>
                 </button>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT3-jP-opx">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="2" minimumInteritemSpacing="2" id="OqF-lF-kCg">
                         <size key="itemSize" width="50" height="50"/>
@@ -48,17 +48,25 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPd-4Y-Mxv" customClass="KeyboardButton" customModule="EmojiKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="55" y="150" width="265" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </button>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
+                <constraint firstItem="mPd-4Y-Mxv" firstAttribute="leading" secondItem="ULs-cd-5tM" secondAttribute="trailing" constant="5" id="7Ch-7F-UfP"/>
                 <constraint firstItem="gT3-jP-opx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9kG-aB-D9p"/>
-                <constraint firstItem="ULs-cd-5tM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Bvn-qM-pTK"/>
+                <constraint firstItem="ULs-cd-5tM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="Bvn-qM-pTK"/>
                 <constraint firstItem="gT3-jP-opx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Cxz-SB-H0x"/>
-                <constraint firstItem="ULs-cd-5tM" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="FuP-vu-Kn4"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mXA-Kr-9BE" secondAttribute="trailing" id="MBW-OO-wBU"/>
+                <constraint firstItem="ULs-cd-5tM" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" constant="-5" id="FuP-vu-Kn4"/>
+                <constraint firstItem="mPd-4Y-Mxv" firstAttribute="top" secondItem="gT3-jP-opx" secondAttribute="bottom" constant="5" id="Gg0-XI-JJr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mXA-Kr-9BE" secondAttribute="trailing" constant="5" id="MBW-OO-wBU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mPd-4Y-Mxv" secondAttribute="bottom" constant="5" id="TOO-BD-TSX"/>
                 <constraint firstItem="gT3-jP-opx" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="ahp-X1-Nn3"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mXA-Kr-9BE" secondAttribute="bottom" id="c9N-45-4H6"/>
-                <constraint firstItem="ULs-cd-5tM" firstAttribute="top" secondItem="gT3-jP-opx" secondAttribute="bottom" id="hYz-2T-xsA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mXA-Kr-9BE" secondAttribute="bottom" constant="5" id="c9N-45-4H6"/>
+                <constraint firstItem="ULs-cd-5tM" firstAttribute="top" secondItem="gT3-jP-opx" secondAttribute="bottom" constant="5" id="hYz-2T-xsA"/>
+                <constraint firstItem="mXA-Kr-9BE" firstAttribute="leading" secondItem="mPd-4Y-Mxv" secondAttribute="trailing" constant="5" id="tsZ-ff-adb"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
@@ -66,8 +74,9 @@
                 <outlet property="backspaceButton" destination="mXA-Kr-9BE" id="mQV-3Y-5s6"/>
                 <outlet property="collectionView" destination="gT3-jP-opx" id="EYo-pX-cVT"/>
                 <outlet property="nextKeyboardButton" destination="ULs-cd-5tM" id="AJH-HJ-I2S"/>
+                <outlet property="spacebarButton" destination="mPd-4Y-Mxv" id="1UJ-ov-uHV"/>
             </connections>
-            <point key="canvasLocation" x="40.5" y="-0.5"/>
+            <point key="canvasLocation" x="40.5" y="-1"/>
         </view>
     </objects>
     <resources>

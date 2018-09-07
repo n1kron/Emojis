@@ -19,3 +19,11 @@ class Utiles {
         collectionViewLayout?.invalidateLayout()
     }
 }
+
+class KeyboardButton: UIButton {
+    override open var isHighlighted: Bool {
+        didSet {
+            backgroundColor = isHighlighted ? UIColor.lightGray : UIColor.white
+        }
+    }
+}

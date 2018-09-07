@@ -22,6 +22,8 @@
 		99165F6A214186BC00B5E71D /* EmojisData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F5D2141715400B5E71D /* EmojisData.swift */; };
 		99165F6C214186CD00B5E71D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99165F6B214186CD00B5E71D /* Alamofire.framework */; };
 		99165F6E214186D100B5E71D /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99165F6D214186D100B5E71D /* Kingfisher.framework */; };
+		99165F7821428E6B00B5E71D /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A312A21404219000D3993 /* Consts.swift */; };
+		99165F792142976E00B5E71D /* Utiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F672141787900B5E71D /* Utiles.swift */; };
 		996F5BFF21396643008BA54F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5BFE21396643008BA54F /* AppDelegate.swift */; };
 		996F5C0121396643008BA54F /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5C0021396643008BA54F /* FoodViewController.swift */; };
 		996F5C0421396643008BA54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 996F5C0221396643008BA54F /* Main.storyboard */; };
@@ -600,8 +602,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				996F5C492139910B008BA54F /* KeyboardView.swift in Sources */,
+				99165F7821428E6B00B5E71D /* Consts.swift in Sources */,
 				999A3126213FF5EF000D3993 /* Cells.swift in Sources */,
 				99165F69214186B500B5E71D /* Emojis.swift in Sources */,
+				99165F792142976E00B5E71D /* Utiles.swift in Sources */,
 				996F5C33213966FB008BA54F /* KeyboardViewController.swift in Sources */,
 				99165F6A214186BC00B5E71D /* EmojisData.swift in Sources */,
 			);

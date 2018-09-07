@@ -46,10 +46,15 @@ class KeyboardViewController: UIInputViewController {
         
         keyboardView.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
         keyboardView.backspaceButton.addTarget(self, action: #selector(backspace), for: .touchUpInside)
+        keyboardView.spacebarButton.addTarget(self, action: #selector(spacebar), for: .touchUpInside)
         
         NotificationCenter.default.addObserver(forName: Notification.Name("emojis"), object: nil, queue: nil) {(notification) in
             keyboardView.collectionView.reloadData()
         }
+    }
+    
+    @objc func spacebar() {
+        textDocumentProxy.insertText(" ")
     }
     
     @objc func backspace() {
@@ -71,11 +76,15 @@ extension KeyboardViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.size.width * 0.12 , height: UIScreen.main.bounds.size.height * 0.0674)
+        return CGSize(width: UIScreen.main.bounds.size.width * 0.12 , height: UIScreen.main.bounds.size.width * 0.12)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsetsMake(10, 10, 10, 10)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let imageUrl = URL(string: EmojisData.shared.allEmojiesList[indexPath.row].smallImage)
+        let imageUrl = URL(string: Consts.isIpad ? EmojisData.shared.allEmojiesList[indexPath.row].bigImage : EmojisData.shared.allEmojiesList[indexPath.row].smallImage)
         if let data = try? Data(contentsOf: imageUrl!) {
             if let image = UIImage(data: data) {
                 DispatchQueue.main.async {
@@ -87,9 +96,10 @@ extension KeyboardViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "KeyboardCollectionViewCell", for: indexPath) as! KeyboardCollectionViewCell
-            let image = EmojisData.shared.allEmojiesList[indexPath.row].smallImage
-            cell.imageView.kf.setImage(with: URL(string: image), completionHandler: { (image, error, cacheType, imageUrl) in
-            })
+        
+        let image = Consts.isIpad ? EmojisData.shared.allEmojiesList[indexPath.row].bigImage : EmojisData.shared.allEmojiesList[indexPath.row].smallImage
+        cell.imageView.kf.setImage(with: URL(string: image), completionHandler: { (image, error, cacheType, imageUrl) in
+        })
         
         return cell
     }
