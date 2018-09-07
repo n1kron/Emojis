@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StoreKit
 
 class InformationViewController: UIViewController {
     
@@ -16,6 +17,15 @@ class InformationViewController: UIViewController {
         super.viewDidLoad()
         for button in infoButtons {
             button.layer.cornerRadius = 10
+        }
+    }
+    
+    @IBAction func rateAction(_ sender: Any) {
+        if #available( iOS 10.3,*){
+            SKStoreReviewController.requestReview()
+        } else {
+            // TODO: Change URL
+            UIApplication.shared.open(URL(string: "https://itunes.apple.com/us/app/исламские-книги-читать-онлайн/id1434539304?l=ru&ls=1&mt=8")!, options: [:], completionHandler: nil)
         }
     }
     

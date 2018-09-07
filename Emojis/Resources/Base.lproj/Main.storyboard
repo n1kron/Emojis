@@ -33,7 +33,7 @@
         <!--Animals & Nature-->
         <scene sceneID="9yP-Nh-zU7">
             <objects>
-                <viewController id="Ffa-FN-2qg" customClass="NatureViewController" customModule="Emojis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ffa-FN-2qg" customClass="NatureViewController" customModule="Mr__Emoji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yMa-0T-dzK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,7 +48,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SecondCollectionViewCell" id="sEW-CF-0Wu" customClass="NatureCollectionViewCell" customModule="Emojis" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SecondCollectionViewCell" id="sEW-CF-0Wu" customClass="NatureCollectionViewCell" customModule="Mr__Emoji" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -99,7 +99,7 @@
         <!--Smileys & People-->
         <scene sceneID="jdS-LO-A4h">
             <objects>
-                <viewController id="3BV-8O-F6C" customClass="SmileysViewController" customModule="Emojis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3BV-8O-F6C" customClass="SmileysViewController" customModule="Mr__Emoji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H9M-CG-kRc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,7 +114,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FirstCollectionViewCell" id="zDU-WQ-3GA" customClass="SmileysCollectionViewCell" customModule="Emojis" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FirstCollectionViewCell" id="zDU-WQ-3GA" customClass="SmileysCollectionViewCell" customModule="Mr__Emoji" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -165,7 +165,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="WhH-s6-Rnu">
             <objects>
-                <tabBarController id="sa8-d6-9L0" customClass="TabBarViewController" customModule="Emojis" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="sa8-d6-9L0" customClass="TabBarViewController" customModule="Mr__Emoji" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="t3W-yO-hhi">
                         <barButtonItem key="backBarButtonItem" title=" " id="yz1-Rv-L3N"/>
                         <barButtonItem key="leftBarButtonItem" title="Item" image="info_icon" id="aLC-L2-7TN">
@@ -201,7 +201,7 @@
         <!--Explanations View Controller-->
         <scene sceneID="5pE-mI-eE4">
             <objects>
-                <viewController id="tpe-hd-sKi" customClass="ExplanationsViewController" customModule="Emojis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tpe-hd-sKi" customClass="ExplanationsViewController" customModule="Mr__Emoji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GPU-Bk-BhV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -441,7 +441,7 @@
         <!--App Name-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FoodViewController" customModule="Emojis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FoodViewController" customModule="Mr__Emoji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -456,7 +456,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ThirdCollectionViewCell" id="mWi-KU-TJN" customClass="FoodCollectionViewCell" customModule="Emojis" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ThirdCollectionViewCell" id="mWi-KU-TJN" customClass="FoodCollectionViewCell" customModule="Mr__Emoji" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -515,7 +515,7 @@
         <!--Activity-->
         <scene sceneID="rbK-EF-A3s">
             <objects>
-                <viewController id="xee-gb-CsO" customClass="ActivityViewController" customModule="Emojis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xee-gb-CsO" customClass="ActivityViewController" customModule="Mr__Emoji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v2A-zW-JZ4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -530,7 +530,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ActivityCollectionViewCell" id="8UF-Rh-mB0" customClass="ActivityCollectionViewCell" customModule="Emojis" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ActivityCollectionViewCell" id="8UF-Rh-mB0" customClass="ActivityCollectionViewCell" customModule="Mr__Emoji" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -581,7 +581,7 @@
         <!--Information View Controller-->
         <scene sceneID="Y5i-eU-vxo">
             <objects>
-                <viewController id="8Rs-k1-KEg" customClass="InformationViewController" customModule="Emojis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8Rs-k1-KEg" customClass="InformationViewController" customModule="Mr__Emoji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J6g-t9-Qnd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -589,6 +589,17 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_launch" translatesAutoresizingMaskIntoConstraints="NO" id="HrR-ir-pyx">
                                 <rect key="frame" x="0.5" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNe-Qt-arh">
+                                <rect key="frame" x="56" y="393" width="263" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.39959327979999998" blue="0.59430606929999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Rate App">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="rateAction:" destination="8Rs-k1-KEg" eventType="touchUpInside" id="r1f-5H-1Cb"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wp-jA-otU">
                                 <rect key="frame" x="56" y="449" width="263" height="36"/>
                                 <color key="backgroundColor" red="1" green="0.39959327979999998" blue="0.59430606929999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -629,11 +640,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HrR-ir-pyx" firstAttribute="height" secondItem="J6g-t9-Qnd" secondAttribute="height" id="4I4-0C-1uF"/>
+                            <constraint firstItem="zNe-Qt-arh" firstAttribute="centerX" secondItem="J6g-t9-Qnd" secondAttribute="centerX" id="4rV-6r-azm"/>
                             <constraint firstItem="feG-NM-G59" firstAttribute="top" secondItem="ITI-Xe-Fj4" secondAttribute="bottom" constant="20" id="5tf-35-1YX"/>
+                            <constraint firstItem="zNe-Qt-arh" firstAttribute="height" secondItem="ITI-Xe-Fj4" secondAttribute="height" id="6X5-iK-cHO"/>
                             <constraint firstItem="HrR-ir-pyx" firstAttribute="centerX" secondItem="J6g-t9-Qnd" secondAttribute="centerX" id="F4S-Jn-NcV"/>
+                            <constraint firstItem="feG-NM-G59" firstAttribute="centerX" secondItem="J6g-t9-Qnd" secondAttribute="centerX" id="Jsj-Oy-pXo"/>
+                            <constraint firstItem="feG-NM-G59" firstAttribute="width" secondItem="J6g-t9-Qnd" secondAttribute="width" multiplier="0.7" id="MR2-M9-lum"/>
                             <constraint firstItem="HrR-ir-pyx" firstAttribute="width" secondItem="J6g-t9-Qnd" secondAttribute="width" id="Nwo-b0-ba8"/>
-                            <constraint firstItem="ITI-Xe-Fj4" firstAttribute="leading" secondItem="feG-NM-G59" secondAttribute="leading" id="SHG-mC-ard"/>
-                            <constraint firstItem="ITI-Xe-Fj4" firstAttribute="trailing" secondItem="feG-NM-G59" secondAttribute="trailing" id="ZL1-Qi-nfu"/>
+                            <constraint firstItem="6Wp-jA-otU" firstAttribute="top" secondItem="zNe-Qt-arh" secondAttribute="bottom" constant="20" id="Q7H-Gu-UY2"/>
+                            <constraint firstItem="zNe-Qt-arh" firstAttribute="width" secondItem="J6g-t9-Qnd" secondAttribute="width" multiplier="0.7" id="Rek-pV-mhF"/>
                             <constraint firstItem="6Wp-jA-otU" firstAttribute="centerY" secondItem="J6g-t9-Qnd" secondAttribute="centerY" multiplier="1.4" id="gyG-UX-gmv"/>
                             <constraint firstItem="6Wp-jA-otU" firstAttribute="width" secondItem="J6g-t9-Qnd" secondAttribute="width" multiplier="0.7" id="jPA-gD-efb"/>
                             <constraint firstItem="ITI-Xe-Fj4" firstAttribute="top" secondItem="6Wp-jA-otU" secondAttribute="bottom" constant="20" id="lLO-zV-016"/>
@@ -650,6 +665,7 @@
                         <outletCollection property="infoButtons" destination="6Wp-jA-otU" collectionClass="NSMutableArray" id="a2e-3c-8xo"/>
                         <outletCollection property="infoButtons" destination="ITI-Xe-Fj4" collectionClass="NSMutableArray" id="Xze-TF-zzy"/>
                         <outletCollection property="infoButtons" destination="feG-NM-G59" collectionClass="NSMutableArray" id="aEe-8q-bIm"/>
+                        <outletCollection property="infoButtons" destination="zNe-Qt-arh" collectionClass="NSMutableArray" id="MO2-uB-Css"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PcS-jw-cU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
