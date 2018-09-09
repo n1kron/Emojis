@@ -24,8 +24,7 @@ class InformationViewController: UIViewController {
         if #available( iOS 10.3,*){
             SKStoreReviewController.requestReview()
         } else {
-            // TODO: Change URL
-            UIApplication.shared.open(URL(string: "https://itunes.apple.com/us/app/исламские-книги-читать-онлайн/id1434539304?l=ru&ls=1&mt=8")!, options: [:], completionHandler: nil)
+            UIApplication.shared.open(URL(string: "https://itunes.apple.com/us/app/mr-emojis/id1435728419?l=ru&ls=1&mt=8")!, options: [:], completionHandler: nil)
         }
     }
     
@@ -34,7 +33,7 @@ class InformationViewController: UIViewController {
     }
     
     @IBAction func termOfUseAction(_ sender: Any) {
-        openUrl(urlString: "http://104.236.106.86/politics.html") // change reference
+        openUrl(urlString: "http://104.236.106.86/po.html") // change reference
     }
     
     @IBAction func subscriptionAgreementAction(_ sender: Any) {

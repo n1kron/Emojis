@@ -107,17 +107,17 @@
 		99165F672141787900B5E71D /* Utiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utiles.swift; sourceTree = "<group>"; };
 		99165F6B214186CD00B5E71D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99165F6D214186D100B5E71D /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		996F5BFB21396643008BA54F /* Mr. Emoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mr. Emoji.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		996F5BFB21396643008BA54F /* Mr. Emojis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mr. Emojis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		996F5BFE21396643008BA54F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		996F5C0021396643008BA54F /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		996F5C0321396643008BA54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		996F5C0521396645008BA54F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		996F5C0821396645008BA54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		996F5C0A21396645008BA54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		996F5C0F21396645008BA54F /* Mr. EmojiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mr. EmojiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		996F5C0F21396645008BA54F /* Mr. EmojisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mr. EmojisTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		996F5C1321396645008BA54F /* EmojisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojisTests.swift; sourceTree = "<group>"; };
 		996F5C1521396645008BA54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		996F5C1A21396645008BA54F /* Mr. EmojiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mr. EmojiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		996F5C1A21396645008BA54F /* Mr. EmojisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mr. EmojisUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		996F5C1E21396645008BA54F /* EmojisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojisUITests.swift; sourceTree = "<group>"; };
 		996F5C2021396645008BA54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		996F5C30213966FB008BA54F /* EmojiKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EmojiKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,9 +212,9 @@
 		996F5BFC21396643008BA54F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				996F5BFB21396643008BA54F /* Mr. Emoji.app */,
-				996F5C0F21396645008BA54F /* Mr. EmojiTests.xctest */,
-				996F5C1A21396645008BA54F /* Mr. EmojiUITests.xctest */,
+				996F5BFB21396643008BA54F /* Mr. Emojis.app */,
+				996F5C0F21396645008BA54F /* Mr. EmojisTests.xctest */,
+				996F5C1A21396645008BA54F /* Mr. EmojisUITests.xctest */,
 				996F5C30213966FB008BA54F /* EmojiKeyboard.appex */,
 			);
 			name = Products;
@@ -347,9 +347,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		996F5BFA21396643008BA54F /* Mr. Emoji */ = {
+		996F5BFA21396643008BA54F /* Mr. Emojis */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 996F5C2321396645008BA54F /* Build configuration list for PBXNativeTarget "Mr. Emoji" */;
+			buildConfigurationList = 996F5C2321396645008BA54F /* Build configuration list for PBXNativeTarget "Mr. Emojis" */;
 			buildPhases = (
 				D1A6F5854DDFD7B499BF64D8 /* [CP] Check Pods Manifest.lock */,
 				996F5BF721396643008BA54F /* Sources */,
@@ -363,14 +363,14 @@
 			dependencies = (
 				996F5C36213966FB008BA54F /* PBXTargetDependency */,
 			);
-			name = "Mr. Emoji";
+			name = "Mr. Emojis";
 			productName = Emojis;
-			productReference = 996F5BFB21396643008BA54F /* Mr. Emoji.app */;
+			productReference = 996F5BFB21396643008BA54F /* Mr. Emojis.app */;
 			productType = "com.apple.product-type.application";
 		};
-		996F5C0E21396645008BA54F /* Mr. EmojiTests */ = {
+		996F5C0E21396645008BA54F /* Mr. EmojisTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 996F5C2621396645008BA54F /* Build configuration list for PBXNativeTarget "Mr. EmojiTests" */;
+			buildConfigurationList = 996F5C2621396645008BA54F /* Build configuration list for PBXNativeTarget "Mr. EmojisTests" */;
 			buildPhases = (
 				996F5C0B21396645008BA54F /* Sources */,
 				996F5C0C21396645008BA54F /* Frameworks */,
@@ -381,14 +381,14 @@
 			dependencies = (
 				996F5C1121396645008BA54F /* PBXTargetDependency */,
 			);
-			name = "Mr. EmojiTests";
+			name = "Mr. EmojisTests";
 			productName = EmojisTests;
-			productReference = 996F5C0F21396645008BA54F /* Mr. EmojiTests.xctest */;
+			productReference = 996F5C0F21396645008BA54F /* Mr. EmojisTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		996F5C1921396645008BA54F /* Mr. EmojiUITests */ = {
+		996F5C1921396645008BA54F /* Mr. EmojisUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 996F5C2921396645008BA54F /* Build configuration list for PBXNativeTarget "Mr. EmojiUITests" */;
+			buildConfigurationList = 996F5C2921396645008BA54F /* Build configuration list for PBXNativeTarget "Mr. EmojisUITests" */;
 			buildPhases = (
 				996F5C1621396645008BA54F /* Sources */,
 				996F5C1721396645008BA54F /* Frameworks */,
@@ -399,9 +399,9 @@
 			dependencies = (
 				996F5C1C21396645008BA54F /* PBXTargetDependency */,
 			);
-			name = "Mr. EmojiUITests";
+			name = "Mr. EmojisUITests";
 			productName = EmojisUITests;
-			productReference = 996F5C1A21396645008BA54F /* Mr. EmojiUITests.xctest */;
+			productReference = 996F5C1A21396645008BA54F /* Mr. EmojisUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		996F5C2F213966FB008BA54F /* EmojiKeyboard */ = {
@@ -458,7 +458,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 996F5BF621396643008BA54F /* Build configuration list for PBXProject "Mr. Emoji" */;
+			buildConfigurationList = 996F5BF621396643008BA54F /* Build configuration list for PBXProject "Mr. Emojis" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -471,9 +471,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				996F5BFA21396643008BA54F /* Mr. Emoji */,
-				996F5C0E21396645008BA54F /* Mr. EmojiTests */,
-				996F5C1921396645008BA54F /* Mr. EmojiUITests */,
+				996F5BFA21396643008BA54F /* Mr. Emojis */,
+				996F5C0E21396645008BA54F /* Mr. EmojisTests */,
+				996F5C1921396645008BA54F /* Mr. EmojisUITests */,
 				996F5C2F213966FB008BA54F /* EmojiKeyboard */,
 			);
 		};
@@ -636,12 +636,12 @@
 /* Begin PBXTargetDependency section */
 		996F5C1121396645008BA54F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 996F5BFA21396643008BA54F /* Mr. Emoji */;
+			target = 996F5BFA21396643008BA54F /* Mr. Emojis */;
 			targetProxy = 996F5C1021396645008BA54F /* PBXContainerItemProxy */;
 		};
 		996F5C1C21396645008BA54F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 996F5BFA21396643008BA54F /* Mr. Emoji */;
+			target = 996F5BFA21396643008BA54F /* Mr. Emojis */;
 			targetProxy = 996F5C1B21396645008BA54F /* PBXContainerItemProxy */;
 		};
 		996F5C36213966FB008BA54F /* PBXTargetDependency */ = {
@@ -799,7 +799,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.Emojis;
+				PRODUCT_BUNDLE_IDENTIFIER = org.mr.Emoji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -820,7 +820,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.Emojis;
+				PRODUCT_BUNDLE_IDENTIFIER = org.mr.Emoji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -843,7 +843,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mr. Emoji.app/Mr. Emoji";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mr. Emojis.app/Mr. Emojis";
 			};
 			name = Debug;
 		};
@@ -863,7 +863,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mr. Emoji.app/Mr. Emoji";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mr. Emojis.app/Mr. Emojis";
 			};
 			name = Release;
 		};
@@ -952,7 +952,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		996F5BF621396643008BA54F /* Build configuration list for PBXProject "Mr. Emoji" */ = {
+		996F5BF621396643008BA54F /* Build configuration list for PBXProject "Mr. Emojis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				996F5C2121396645008BA54F /* Debug */,
@@ -961,7 +961,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		996F5C2321396645008BA54F /* Build configuration list for PBXNativeTarget "Mr. Emoji" */ = {
+		996F5C2321396645008BA54F /* Build configuration list for PBXNativeTarget "Mr. Emojis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				996F5C2421396645008BA54F /* Debug */,
@@ -970,7 +970,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		996F5C2621396645008BA54F /* Build configuration list for PBXNativeTarget "Mr. EmojiTests" */ = {
+		996F5C2621396645008BA54F /* Build configuration list for PBXNativeTarget "Mr. EmojisTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				996F5C2721396645008BA54F /* Debug */,
@@ -979,7 +979,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		996F5C2921396645008BA54F /* Build configuration list for PBXNativeTarget "Mr. EmojiUITests" */ = {
+		996F5C2921396645008BA54F /* Build configuration list for PBXNativeTarget "Mr. EmojisUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				996F5C2A21396645008BA54F /* Debug */,
