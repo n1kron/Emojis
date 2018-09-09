@@ -216,13 +216,13 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to enable Emoji" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgs-sa-0xS">
-                                                        <rect key="frame" x="107" y="352" width="162" height="20.5"/>
+                                                        <rect key="frame" x="107" y="337" width="162" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="eCz-BB-sdJ">
-                                                        <rect key="frame" x="76" y="126" width="225" height="201"/>
+                                                        <rect key="frame" x="75" y="126" width="225" height="201"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="eCz-BB-sdJ" secondAttribute="height" multiplier="582:518" id="JiZ-Se-Yri"/>
                                                         </constraints>
@@ -264,28 +264,34 @@
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chz-M3-Yjq">
                                                         <rect key="frame" x="75.5" y="580.5" width="225" height="36"/>
-                                                        <color key="backgroundColor" red="0.81568627449999997" green="0.96862745100000003" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.49803921569999998" green="0.47843137250000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Chz-M3-Yjq" secondAttribute="height" multiplier="200:32" id="htL-k1-02V"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                                         <state key="normal" title="Setup Keyboard">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                                        </variation>
                                                         <connections>
                                                             <action selector="setupAction:" destination="tpe-hd-sKi" eventType="touchUpInside" id="fbU-c2-2XH"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4r-0i-WQF">
-                                                        <rect key="frame" x="75" y="55.5" width="225" height="38.5"/>
-                                                        <color key="backgroundColor" red="0.81568627449999997" green="0.96862745100000003" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <rect key="frame" x="75" y="68" width="225" height="38"/>
+                                                        <color key="backgroundColor" red="0.49803921568627452" green="0.47843137254901963" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="X4r-0i-WQF" secondAttribute="height" multiplier="65:11" id="tRb-uF-sbi"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                         <state key="normal" title="NEXT">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                                        </variation>
                                                         <connections>
                                                             <action selector="nextViewAction:" destination="tpe-hd-sKi" eventType="touchUpInside" id="5ao-5f-o9V"/>
                                                         </connections>
@@ -293,19 +299,19 @@
                                                 </subviews>
                                                 <color key="backgroundColor" red="1" green="0.39959327979999998" blue="0.59430606929999996" alpha="0.051458333330000001" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
+                                                    <constraint firstItem="xgs-sa-0xS" firstAttribute="top" secondItem="eCz-BB-sdJ" secondAttribute="bottom" constant="10" id="0gB-f8-eyw"/>
                                                     <constraint firstItem="eCz-BB-sdJ" firstAttribute="centerX" secondItem="JEr-ut-HiE" secondAttribute="centerX" id="795-UP-EKe"/>
                                                     <constraint firstItem="Chz-M3-Yjq" firstAttribute="width" secondItem="JEr-ut-HiE" secondAttribute="width" multiplier="0.6" id="CP6-Xx-f21"/>
-                                                    <constraint firstItem="xgs-sa-0xS" firstAttribute="centerY" secondItem="JEr-ut-HiE" secondAttribute="centerY" multiplier="1.12" id="GnO-rE-ade"/>
                                                     <constraint firstItem="X4r-0i-WQF" firstAttribute="centerX" secondItem="JEr-ut-HiE" secondAttribute="centerX" id="Lqf-AZ-3n4"/>
                                                     <constraint firstItem="eYZ-bS-lRG" firstAttribute="width" secondItem="JEr-ut-HiE" secondAttribute="width" multiplier="0.9" id="O0Y-7F-D8p"/>
                                                     <constraint firstItem="Chz-M3-Yjq" firstAttribute="centerX" secondItem="JEr-ut-HiE" secondAttribute="centerX" id="QRm-Vv-Uy2"/>
                                                     <constraint firstItem="xgs-sa-0xS" firstAttribute="centerX" secondItem="JEr-ut-HiE" secondAttribute="centerX" id="d6e-SZ-FLa"/>
                                                     <constraint firstItem="eYZ-bS-lRG" firstAttribute="centerX" secondItem="JEr-ut-HiE" secondAttribute="centerX" id="fhN-fL-ZYo"/>
                                                     <constraint firstItem="eCz-BB-sdJ" firstAttribute="centerY" secondItem="JEr-ut-HiE" secondAttribute="centerY" multiplier="0.7" id="hFL-M3-BuX"/>
+                                                    <constraint firstItem="eCz-BB-sdJ" firstAttribute="top" secondItem="X4r-0i-WQF" secondAttribute="bottom" constant="20" id="jwb-1j-Aqh"/>
                                                     <constraint firstItem="eYZ-bS-lRG" firstAttribute="height" secondItem="JEr-ut-HiE" secondAttribute="height" multiplier="0.25" id="kgX-Je-N1g"/>
                                                     <constraint firstItem="Chz-M3-Yjq" firstAttribute="centerY" secondItem="JEr-ut-HiE" secondAttribute="centerY" multiplier="1.85" id="l5w-UC-2ch"/>
                                                     <constraint firstItem="eYZ-bS-lRG" firstAttribute="centerY" secondItem="JEr-ut-HiE" secondAttribute="centerY" multiplier="1.45" id="s30-6q-Q1M"/>
-                                                    <constraint firstItem="X4r-0i-WQF" firstAttribute="centerY" secondItem="JEr-ut-HiE" secondAttribute="centerY" multiplier="0.23" id="snc-C3-wfb"/>
                                                     <constraint firstItem="eCz-BB-sdJ" firstAttribute="width" secondItem="JEr-ut-HiE" secondAttribute="width" multiplier="0.6" id="t0Z-yS-zgu"/>
                                                     <constraint firstItem="X4r-0i-WQF" firstAttribute="width" secondItem="JEr-ut-HiE" secondAttribute="width" multiplier="0.6" id="tat-Y0-EF2"/>
                                                 </constraints>
@@ -314,7 +320,7 @@
                                                 <rect key="frame" x="375" y="0.0" width="375" height="647"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to enable Emoji" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1C1-bn-x80">
-                                                        <rect key="frame" x="107" y="352" width="162" height="20.5"/>
+                                                        <rect key="frame" x="107" y="331" width="162" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -356,20 +362,23 @@
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD1-GW-G8m">
                                                         <rect key="frame" x="75.5" y="579.5" width="225" height="38"/>
-                                                        <color key="backgroundColor" red="0.81568627449999997" green="0.96862745100000003" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.49803921569999998" green="0.47843137250000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="KD1-GW-G8m" secondAttribute="height" multiplier="65:11" id="IkH-LQ-tga"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                         <state key="normal" title="Close">
-                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                                        </variation>
                                                         <connections>
                                                             <action selector="closeAction:" destination="tpe-hd-sKi" eventType="touchUpInside" id="fp6-O7-bdG"/>
                                                         </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="s3U-kk-4mw">
-                                                        <rect key="frame" x="37.5" y="60.5" width="300" height="267"/>
+                                                        <rect key="frame" x="56.5" y="77" width="262.5" height="234"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="s3U-kk-4mw" secondAttribute="height" multiplier="582:518" id="fib-VS-jvU"/>
                                                         </constraints>
@@ -382,9 +391,9 @@
                                                     <constraint firstItem="KD1-GW-G8m" firstAttribute="centerX" secondItem="2O2-Hk-NBo" secondAttribute="centerX" id="9Gj-Kb-cI1"/>
                                                     <constraint firstItem="s3U-kk-4mw" firstAttribute="centerX" secondItem="2O2-Hk-NBo" secondAttribute="centerX" id="G09-L0-MTC"/>
                                                     <constraint firstItem="QHa-26-qPO" firstAttribute="width" secondItem="2O2-Hk-NBo" secondAttribute="width" multiplier="0.9" id="JUi-8t-xl9"/>
-                                                    <constraint firstItem="1C1-bn-x80" firstAttribute="centerY" secondItem="2O2-Hk-NBo" secondAttribute="centerY" multiplier="1.12" id="e3E-QB-LlC"/>
                                                     <constraint firstItem="KD1-GW-G8m" firstAttribute="centerY" secondItem="2O2-Hk-NBo" secondAttribute="centerY" multiplier="1.85" id="jEv-56-ECg"/>
-                                                    <constraint firstItem="s3U-kk-4mw" firstAttribute="width" secondItem="2O2-Hk-NBo" secondAttribute="width" multiplier="0.8" id="jWH-bO-CV6"/>
+                                                    <constraint firstItem="s3U-kk-4mw" firstAttribute="width" secondItem="2O2-Hk-NBo" secondAttribute="width" multiplier="0.7" id="jWH-bO-CV6"/>
+                                                    <constraint firstItem="1C1-bn-x80" firstAttribute="top" secondItem="s3U-kk-4mw" secondAttribute="bottom" constant="20" id="lHJ-zc-1Ci"/>
                                                     <constraint firstItem="QHa-26-qPO" firstAttribute="centerY" secondItem="2O2-Hk-NBo" secondAttribute="centerY" multiplier="1.45" id="mQG-iT-rqk"/>
                                                     <constraint firstItem="s3U-kk-4mw" firstAttribute="centerY" secondItem="2O2-Hk-NBo" secondAttribute="centerY" multiplier="0.6" id="o8Y-vh-uKK"/>
                                                     <constraint firstItem="QHa-26-qPO" firstAttribute="height" secondItem="2O2-Hk-NBo" secondAttribute="height" multiplier="0.25" id="uBk-6s-04Z"/>
@@ -392,8 +401,10 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="0.93333333330000001" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.93333333330000001" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="2O2-Hk-NBo" firstAttribute="width" secondItem="pU9-uE-L5a" secondAttribute="width" id="4Qr-yS-sV9"/>
                                     <constraint firstItem="JEr-ut-HiE" firstAttribute="height" secondItem="pU9-uE-L5a" secondAttribute="height" id="CbT-AY-vts"/>
@@ -417,7 +428,7 @@
                                 <color key="backgroundColor" red="0.81568627450980391" green="0.96862745098039216" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.93333333333333335" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pU9-uE-L5a" firstAttribute="trailing" secondItem="GPU-Bk-BhV" secondAttribute="trailing" id="28R-5X-Tul"/>
                             <constraint firstItem="DRB-z6-VTR" firstAttribute="leading" secondItem="GPU-Bk-BhV" secondAttribute="leading" id="ANo-Vx-tQq"/>
@@ -605,7 +616,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_launch" translatesAutoresizingMaskIntoConstraints="NO" id="HrR-ir-pyx">
-                                <rect key="frame" x="0.5" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.5" y="-67" width="375" height="734"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNe-Qt-arh">
                                 <rect key="frame" x="56" y="443" width="263" height="36"/>
@@ -614,6 +625,9 @@
                                 <state key="normal" title="Rate App">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                </variation>
                                 <connections>
                                     <action selector="rateAction:" destination="8Rs-k1-KEg" eventType="touchUpInside" id="r1f-5H-1Cb"/>
                                 </connections>
@@ -628,6 +642,9 @@
                                 <state key="normal" title="Private Policy">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                </variation>
                                 <connections>
                                     <action selector="privacyPolicyAction:" destination="8Rs-k1-KEg" eventType="touchUpInside" id="bLF-kf-AdE"/>
                                 </connections>
@@ -639,6 +656,9 @@
                                 <state key="normal" title="Subscription Agreement">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                </variation>
                                 <connections>
                                     <action selector="subscriptionAgreementAction:" destination="8Rs-k1-KEg" eventType="touchUpInside" id="R71-En-ceA"/>
                                 </connections>
@@ -650,6 +670,9 @@
                                 <state key="normal" title="Term Of Use">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                </variation>
                                 <connections>
                                     <action selector="termOfUseAction:" destination="8Rs-k1-KEg" eventType="touchUpInside" id="OFB-Df-T0f"/>
                                 </connections>
@@ -657,7 +680,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="HrR-ir-pyx" firstAttribute="height" secondItem="J6g-t9-Qnd" secondAttribute="height" id="4I4-0C-1uF"/>
+                            <constraint firstItem="HrR-ir-pyx" firstAttribute="height" secondItem="J6g-t9-Qnd" secondAttribute="height" multiplier="1.1" id="4I4-0C-1uF"/>
                             <constraint firstItem="zNe-Qt-arh" firstAttribute="centerX" secondItem="J6g-t9-Qnd" secondAttribute="centerX" id="4rV-6r-azm"/>
                             <constraint firstItem="feG-NM-G59" firstAttribute="top" secondItem="ITI-Xe-Fj4" secondAttribute="bottom" constant="20" id="5tf-35-1YX"/>
                             <constraint firstItem="zNe-Qt-arh" firstAttribute="height" secondItem="ITI-Xe-Fj4" secondAttribute="height" id="6X5-iK-cHO"/>
@@ -671,7 +694,7 @@
                             <constraint firstItem="6Wp-jA-otU" firstAttribute="width" secondItem="J6g-t9-Qnd" secondAttribute="width" multiplier="0.7" id="jPA-gD-efb"/>
                             <constraint firstItem="ITI-Xe-Fj4" firstAttribute="top" secondItem="6Wp-jA-otU" secondAttribute="bottom" constant="20" id="lLO-zV-016"/>
                             <constraint firstItem="6Wp-jA-otU" firstAttribute="centerX" secondItem="J6g-t9-Qnd" secondAttribute="centerX" id="lW1-L0-MhK"/>
-                            <constraint firstItem="HrR-ir-pyx" firstAttribute="centerY" secondItem="J6g-t9-Qnd" secondAttribute="centerY" id="mpW-ar-pkd"/>
+                            <constraint firstItem="HrR-ir-pyx" firstAttribute="centerY" secondItem="J6g-t9-Qnd" secondAttribute="centerY" multiplier="0.9" id="mpW-ar-pkd"/>
                             <constraint firstItem="ITI-Xe-Fj4" firstAttribute="centerX" secondItem="HrR-ir-pyx" secondAttribute="centerX" id="nGS-h4-yaX"/>
                             <constraint firstItem="feG-NM-G59" firstAttribute="height" secondItem="ITI-Xe-Fj4" secondAttribute="height" id="qO9-7T-Mz5"/>
                             <constraint firstItem="ITI-Xe-Fj4" firstAttribute="height" secondItem="6Wp-jA-otU" secondAttribute="height" id="ryd-Nn-Oct"/>

@@ -301,14 +301,13 @@
 		999A3123213FF3FF000D3993 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				99C0C04921453F88000AF5BC /* Tools */,
 				99165EFA21408C8300B5E71D /* SmileysViewController.swift */,
 				99165EFC21408C9300B5E71D /* NatureViewController.swift */,
 				996F5C0021396643008BA54F /* FoodViewController.swift */,
 				99165F652141769B00B5E71D /* ActivityViewController.swift */,
 				999A3120213FF1AF000D3993 /* InformationViewController.swift */,
 				999A312821402F63000D3993 /* ExplanationsViewController.swift */,
-				99165EF821408A6100B5E71D /* TabBarViewController.swift */,
-				9900119A21433230004A713C /* OnboardingViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -321,6 +320,15 @@
 				99165F672141787900B5E71D /* Utiles.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		99C0C04921453F88000AF5BC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				9900119A21433230004A713C /* OnboardingViewController.swift */,
+				99165EF821408A6100B5E71D /* TabBarViewController.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		A3DA683F136AEA82FDB8FBC8 /* Pods */ = {
