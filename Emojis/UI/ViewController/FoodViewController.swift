@@ -14,7 +14,7 @@ class FoodViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Utiles.shared.configureFlowLayout(collectionView)
-        EmojisData.shared.getData(page: 3, keyboard: false)
+        EmojisData.shared.getData(page: 3)
         NotificationCenter.default.addObserver(forName: Notification.Name("emojis"), object: nil, queue: nil) { [weak self] (notification) in
             self?.collectionView.reloadData()
         }

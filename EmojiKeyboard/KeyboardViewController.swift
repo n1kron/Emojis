@@ -26,7 +26,7 @@ class KeyboardViewController: UIInputViewController {
         delegateKeyboardView = objects.first as! KeyboardView
         
         for i in 1...4 {
-            EmojisData.shared.getData(page: i, keyboard: true)
+            EmojisData.shared.getData(page: i)
         }
         
         let keyboardView = KeyboardView.instanceFromNib()

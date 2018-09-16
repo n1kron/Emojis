@@ -34,10 +34,11 @@ class ExplanationsViewController: UIViewController {
     }
     
     @IBAction func setupAction(_ sender: Any) {
-        if let url = URL(string:UIApplicationOpenSettingsURLString) {
-            if UIApplication.shared.canOpenURL(url) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            }
+        guard let profileUrl = URL(string: UIApplicationOpenSettingsURLString) else { return }
+        
+        if UIApplication.shared.canOpenURL(profileUrl) {
+            UIApplication.shared.open(profileUrl, completionHandler: { (success) in
+            })
         }
     }
     
