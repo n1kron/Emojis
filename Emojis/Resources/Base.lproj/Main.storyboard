@@ -33,7 +33,7 @@
         <!--Animals & Nature-->
         <scene sceneID="9yP-Nh-zU7">
             <objects>
-                <viewController id="Ffa-FN-2qg" customClass="NatureViewController" customModule="Mr__Emoji" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ffa-FN-2qg" customClass="NatureViewController" customModule="Mr__Emojis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yMa-0T-dzK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,7 +48,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SecondCollectionViewCell" id="sEW-CF-0Wu" customClass="NatureCollectionViewCell" customModule="Mr__Emoji" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SecondCollectionViewCell" id="sEW-CF-0Wu" customClass="NatureCollectionViewCell" customModule="Mr__Emojis" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -99,7 +99,7 @@
         <!--Smileys & People-->
         <scene sceneID="jdS-LO-A4h">
             <objects>
-                <viewController id="3BV-8O-F6C" customClass="SmileysViewController" customModule="Mr__Emoji" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3BV-8O-F6C" customClass="SmileysViewController" customModule="Mr__Emojis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H9M-CG-kRc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,7 +114,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FirstCollectionViewCell" id="zDU-WQ-3GA" customClass="SmileysCollectionViewCell" customModule="Mr__Emoji" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FirstCollectionViewCell" id="zDU-WQ-3GA" customClass="SmileysCollectionViewCell" customModule="Mr__Emojis" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -165,7 +165,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="WhH-s6-Rnu">
             <objects>
-                <tabBarController id="sa8-d6-9L0" customClass="TabBarViewController" customModule="Mr__Emoji" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="sa8-d6-9L0" customClass="TabBarViewController" customModule="Mr__Emojis" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="t3W-yO-hhi">
                         <barButtonItem key="backBarButtonItem" title=" " id="yz1-Rv-L3N"/>
                         <barButtonItem key="leftBarButtonItem" title="Item" image="info_icon" id="aLC-L2-7TN">
@@ -201,7 +201,7 @@
         <!--Explanations View Controller-->
         <scene sceneID="5pE-mI-eE4">
             <objects>
-                <viewController id="tpe-hd-sKi" customClass="ExplanationsViewController" customModule="Mr__Emoji" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tpe-hd-sKi" customClass="ExplanationsViewController" customModule="Mr__Emojis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GPU-Bk-BhV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -248,8 +248,8 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. Tap &quot;App Name&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Yjx-dg-S4u">
-                                                                <rect key="frame" x="0.0" y="97" width="146.5" height="32"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. Tap &quot;Mr.Emojis&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Yjx-dg-S4u">
+                                                                <rect key="frame" x="0.0" y="97" width="140" height="32"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -470,7 +470,7 @@
         <!--App Name-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FoodViewController" customModule="Mr__Emoji" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FoodViewController" customModule="Mr__Emojis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -485,7 +485,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ThirdCollectionViewCell" id="mWi-KU-TJN" customClass="FoodCollectionViewCell" customModule="Mr__Emoji" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ThirdCollectionViewCell" id="mWi-KU-TJN" customClass="FoodCollectionViewCell" customModule="Mr__Emojis" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -544,7 +544,7 @@
         <!--Activity-->
         <scene sceneID="rbK-EF-A3s">
             <objects>
-                <viewController id="xee-gb-CsO" customClass="ActivityViewController" customModule="Mr__Emoji" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xee-gb-CsO" customClass="ActivityViewController" customModule="Mr__Emojis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v2A-zW-JZ4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -559,7 +559,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ActivityCollectionViewCell" id="8UF-Rh-mB0" customClass="ActivityCollectionViewCell" customModule="Mr__Emoji" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ActivityCollectionViewCell" id="8UF-Rh-mB0" customClass="ActivityCollectionViewCell" customModule="Mr__Emojis" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -610,7 +610,7 @@
         <!--Information View Controller-->
         <scene sceneID="Y5i-eU-vxo">
             <objects>
-                <viewController id="8Rs-k1-KEg" customClass="InformationViewController" customModule="Mr__Emoji" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8Rs-k1-KEg" customClass="InformationViewController" customModule="Mr__Emojis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J6g-t9-Qnd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -650,7 +650,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feG-NM-G59">
-                                <rect key="frame" x="56.5" y="610.5" width="262.5" height="35"/>
+                                <rect key="frame" x="56.5" y="610.5" width="262.5" height="34.5"/>
                                 <color key="backgroundColor" red="1" green="0.39959327979999998" blue="0.59430606929999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Subscription Agreement">
@@ -716,7 +716,7 @@
         <!--Onboarding View Controller-->
         <scene sceneID="jo6-9P-a8B">
             <objects>
-                <viewController storyboardIdentifier="OnboardingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Gk-vr-mgP" customClass="OnboardingViewController" customModule="Mr__Emoji" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Gk-vr-mgP" customClass="OnboardingViewController" customModule="Mr__Emojis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w9s-YB-WoT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
