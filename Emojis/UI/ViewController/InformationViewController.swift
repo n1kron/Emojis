@@ -29,15 +29,15 @@ class InformationViewController: UIViewController {
     }
     
     @IBAction func privacyPolicyAction(_ sender: Any) {
-        openUrl(urlString: "http://104.236.106.86/politics.html") // change reference
+        openUrl(urlString: "http://emodji.website/politics-emodji.html") // change reference
     }
     
     @IBAction func termOfUseAction(_ sender: Any) {
-        openUrl(urlString: "http://104.236.106.86/po.html") // change reference
+        openUrl(urlString: "http://emodji.website/politics-emodji1.html") // change reference
     }
     
     @IBAction func subscriptionAgreementAction(_ sender: Any) {
-        openUrl(urlString: "http://104.236.106.86/politics.html") // change reference
+        openUrl(urlString: "http://emodji.website/politics-emodji.html") // change reference
     }
     
     func openUrl(urlString:String!) {
