@@ -5,7 +5,6 @@
 //  Created by  Kostantin Zarubin on 31.08.2018.
 //  Copyright © 2018  Kostantin Zarubin. All rights reserved.
 //
-
 import UIKit
 import Kingfisher
 import Alamofire
@@ -23,7 +22,7 @@ class KeyboardViewController: UIInputViewController {
         super.viewDidLoad()
         let nib = UINib(nibName: "KeyboardView", bundle: nil)
         let objects = nib.instantiate(withOwner: nil, options: nil)
-        delegateKeyboardView = objects.first as! KeyboardView
+        delegateKeyboardView = objects.first as? KeyboardView
         
         for i in 1...4 {
             EmojisData.shared.getData(page: i)

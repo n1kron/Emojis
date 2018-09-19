@@ -22,14 +22,13 @@ class EmojisData {
     func getData(page: Int) {
         switch page {
         case 1: smileysList.removeAll()
-            allEmojiesList.removeAll()
+        allEmojiesList.removeAll()
         case 2: natureList.removeAll()
         case 3: foodList.removeAll()
         case 4: activityList.removeAll()
         default: return
         }
         Alamofire.request("http://emodji.site/emojies/categories/\(page)").responseJSON { [weak self] (response) in
-           // print(response.error?.localizedDescription)
             if let unparsedEmojis = response.result.value as? [[String: Any]] {
                 for emojis in unparsedEmojis {
                     let emojiList: Emojis = Emojis(dict: emojis)

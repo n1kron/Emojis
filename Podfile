@@ -5,7 +5,8 @@ target 'EmojiKeyboard' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   # Pods for EmojiKeyboard
-
+  pod 'Alamofire'
+  pod 'Kingfisher'
 end
 
 target 'Mr. Emojis' do
@@ -13,4 +14,10 @@ target 'Mr. Emojis' do
   use_frameworks!
 pod 'Alamofire'
 pod 'Kingfisher'
+pod 'SwiftyJSON'
+pod 'AppsFlyerFramework'
+pod 'FBSDKLoginKit'
+pod 'FacebookCore'
+pod 'FacebookLogin'
+pod 'FacebookShare'
 end

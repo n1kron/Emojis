@@ -13,10 +13,15 @@ class ActivityViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Utiles.shared.configureFlowLayout(collectionView)
-        EmojisData.shared.getData(page: 4)
-        NotificationCenter.default.addObserver(forName: Notification.Name("emojis"), object: nil, queue: nil) { [weak self] (notification) in
-            self?.collectionView.reloadData()
+        if SubscriptionManager.shared.isSubscriptionActive != true {
+            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            self.present(storyboard.instantiateViewController(withIdentifier: "BuySubscriptionController"), animated: true, completion: nil)
+        } else {
+            Utiles.shared.configureFlowLayout(collectionView)
+            EmojisData.shared.getData(page: 4)
+            NotificationCenter.default.addObserver(forName: Notification.Name("emojis"), object: nil, queue: nil) { [weak self] (notification) in
+                self?.collectionView.reloadData()
+            }
         }
     }
 }

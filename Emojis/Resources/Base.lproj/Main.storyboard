@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n1H-7O-EBa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n1H-7O-EBa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +13,7 @@
         <!--Navigation Controller-->
         <scene sceneID="p19-yC-j8g">
             <objects>
-                <navigationController id="n1H-7O-EBa" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="n1H-7O-EBa" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bEk-dT-vZE">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -216,19 +214,19 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to enable Emoji" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgs-sa-0xS">
-                                                        <rect key="frame" x="107" y="337" width="162" height="20.5"/>
+                                                        <rect key="frame" x="106.5" y="336.5" width="162" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="eCz-BB-sdJ">
-                                                        <rect key="frame" x="75" y="126" width="225" height="201"/>
+                                                        <rect key="frame" x="75" y="126.5" width="225" height="200"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="eCz-BB-sdJ" secondAttribute="height" multiplier="582:518" id="JiZ-Se-Yri"/>
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="eYZ-bS-lRG">
-                                                        <rect key="frame" x="19" y="388.5" width="337.5" height="161.5"/>
+                                                        <rect key="frame" x="19" y="388" width="337.5" height="162"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Open IOS Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="qTy-El-9ZJ">
                                                                 <rect key="frame" x="0.0" y="0.0" width="161" height="32.5"/>
@@ -237,25 +235,25 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Tap General &gt; Keyboard &gt; Keyboards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="HXO-cv-DYh">
-                                                                <rect key="frame" x="0.0" y="32.5" width="304.5" height="32"/>
+                                                                <rect key="frame" x="0.0" y="32.5" width="304.5" height="32.5"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Select Add new keyboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="U2i-5o-8IC">
-                                                                <rect key="frame" x="0.0" y="64.5" width="214.5" height="32.5"/>
+                                                                <rect key="frame" x="0.0" y="65" width="214.5" height="32.5"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. Tap &quot;Mr.Emojis&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Yjx-dg-S4u">
-                                                                <rect key="frame" x="0.0" y="97" width="140" height="32"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. Tap &quot;App Name&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Yjx-dg-S4u">
+                                                                <rect key="frame" x="0.0" y="97.5" width="146.5" height="32"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5. Enable Allow full access" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="vv5-IS-OT8">
-                                                                <rect key="frame" x="0.0" y="129" width="202" height="32.5"/>
+                                                                <rect key="frame" x="0.0" y="129.5" width="202" height="32.5"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -263,7 +261,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chz-M3-Yjq">
-                                                        <rect key="frame" x="75.5" y="580.5" width="225" height="36"/>
+                                                        <rect key="frame" x="75" y="580.5" width="225" height="36"/>
                                                         <color key="backgroundColor" red="0.49803921569999998" green="0.47843137250000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Chz-M3-Yjq" secondAttribute="height" multiplier="200:32" id="htL-k1-02V"/>
@@ -280,7 +278,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4r-0i-WQF">
-                                                        <rect key="frame" x="75" y="68" width="225" height="38"/>
+                                                        <rect key="frame" x="75" y="68" width="225" height="38.5"/>
                                                         <color key="backgroundColor" red="0.49803921568627452" green="0.47843137254901963" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="X4r-0i-WQF" secondAttribute="height" multiplier="65:11" id="tRb-uF-sbi"/>
@@ -320,7 +318,7 @@
                                                 <rect key="frame" x="375" y="0.0" width="375" height="647"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to enable Emoji" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1C1-bn-x80">
-                                                        <rect key="frame" x="107" y="331" width="162" height="20.5"/>
+                                                        <rect key="frame" x="106.5" y="331" width="162" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -341,13 +339,13 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Select Add new keyboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="NEz-ma-ac1">
-                                                                <rect key="frame" x="0.0" y="65" width="214.5" height="32"/>
+                                                                <rect key="frame" x="0.0" y="65" width="214.5" height="32.5"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. Tap Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000298023224" translatesAutoresizingMaskIntoConstraints="NO" id="iWK-Gz-W3E">
-                                                                <rect key="frame" x="0.0" y="97" width="91.5" height="32.5"/>
+                                                                <rect key="frame" x="0.0" y="97.5" width="91.5" height="32"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -361,7 +359,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD1-GW-G8m">
-                                                        <rect key="frame" x="75.5" y="579.5" width="225" height="38"/>
+                                                        <rect key="frame" x="75" y="579.5" width="225" height="38"/>
                                                         <color key="backgroundColor" red="0.49803921569999998" green="0.47843137250000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="KD1-GW-G8m" secondAttribute="height" multiplier="65:11" id="IkH-LQ-tga"/>
@@ -378,7 +376,7 @@
                                                         </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="s3U-kk-4mw">
-                                                        <rect key="frame" x="56.5" y="77" width="262.5" height="234"/>
+                                                        <rect key="frame" x="56.5" y="77.5" width="262.5" height="233.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="s3U-kk-4mw" secondAttribute="height" multiplier="582:518" id="fib-VS-jvU"/>
                                                         </constraints>
@@ -616,10 +614,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_launch" translatesAutoresizingMaskIntoConstraints="NO" id="HrR-ir-pyx">
-                                <rect key="frame" x="0.5" y="-67" width="375" height="734"/>
+                                <rect key="frame" x="0.0" y="-66.5" width="375" height="733.5"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNe-Qt-arh">
-                                <rect key="frame" x="56" y="443" width="263" height="36"/>
+                                <rect key="frame" x="56.5" y="443" width="262.5" height="36"/>
                                 <color key="backgroundColor" red="1" green="0.39959327979999998" blue="0.59430606929999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Rate App">
@@ -633,7 +631,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wp-jA-otU">
-                                <rect key="frame" x="56" y="499" width="263" height="36"/>
+                                <rect key="frame" x="56.5" y="499" width="262.5" height="36"/>
                                 <color key="backgroundColor" red="1" green="0.39959327979999998" blue="0.59430606929999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6Wp-jA-otU" secondAttribute="height" multiplier="110:15" id="dhr-pP-UYZ"/>
@@ -650,7 +648,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feG-NM-G59">
-                                <rect key="frame" x="56.5" y="610.5" width="262.5" height="34.5"/>
+                                <rect key="frame" x="56.5" y="610.5" width="262.5" height="36"/>
                                 <color key="backgroundColor" red="1" green="0.39959327979999998" blue="0.59430606929999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Subscription Agreement">
@@ -727,15 +725,26 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnO-0J-27T">
                                         <rect key="frame" x="0.0" y="0.0" width="1125" height="667"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji_1" translatesAutoresizingMaskIntoConstraints="NO" id="miw-CN-mc2">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji_1" translatesAutoresizingMaskIntoConstraints="NO" id="miw-CN-mc2">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Tot-wV-bjf" appends="YES" id="GP9-ab-jiP"/>
+                                                </connections>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji_2" translatesAutoresizingMaskIntoConstraints="NO" id="0vC-vT-KHx">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji_2" translatesAutoresizingMaskIntoConstraints="NO" id="0vC-vT-KHx">
                                                 <rect key="frame" x="375" y="0.0" width="375" height="667"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="LPT-QQ-2oa" appends="YES" id="VWs-n0-5Sq"/>
+                                                </connections>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji_3" translatesAutoresizingMaskIntoConstraints="NO" id="an9-lg-CMp">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji_3" translatesAutoresizingMaskIntoConstraints="NO" id="an9-lg-CMp">
                                                 <rect key="frame" x="750" y="0.0" width="375" height="667"/>
                                                 <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="RIG-M2-DkT" appends="YES" id="Rux-fz-oYo"/>
+                                                </connections>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -769,13 +778,231 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gkh-bJ-JGs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Tot-wV-bjf">
+                    <connections>
+                        <action selector="nextTapActionWithSender:" destination="8Gk-vr-mgP" id="5lO-R9-dac"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="LPT-QQ-2oa">
+                    <connections>
+                        <action selector="nextTapActionWithSender:" destination="8Gk-vr-mgP" id="ftb-4s-I1y"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="RIG-M2-DkT">
+                    <connections>
+                        <action selector="startTapActionWithSender:" destination="8Gk-vr-mgP" id="eGY-jm-qbb"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1132" y="-699"/>
+        </scene>
+        <!--Buy Subscription View Controller-->
+        <scene sceneID="FDl-RT-Pxz">
+            <objects>
+                <viewController storyboardIdentifier="BuySubscriptionController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="3EB-2R-kxE" customClass="BuySubscriptionViewController" customModule="Mr__Emojis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tA0-pw-iRn"/>
+                        <viewControllerLayoutGuide type="bottom" id="21o-tF-aXK"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="tE0-GQ-FzN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xy-r7-21Q">
+                                <rect key="frame" x="25" y="45" width="325" height="597"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_launch" translatesAutoresizingMaskIntoConstraints="NO" id="tcL-Wk-bJZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="547"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EP-IY-j28">
+                                        <rect key="frame" x="103.5" y="8.5" width="118" height="31"/>
+                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="15"/>
+                                        <state key="normal" title="Restore purchases">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="restoreButtonPressed:" destination="3EB-2R-kxE" eventType="touchUpInside" id="xSr-Od-b9i"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4up-JX-fuv">
+                                        <rect key="frame" x="0.0" y="298.5" width="325" height="298.5"/>
+                                        <color key="backgroundColor" red="0.89821239826580312" green="0.82424717222327126" blue="0.020796915871255123" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRY THE PREMIUM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G04-ni-Wli">
+                                        <rect key="frame" x="5" y="298.5" width="315" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="rEi-O9-GbR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="25"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="50"/>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZw-E6-tLl">
+                                        <rect key="frame" x="50" y="418.5" width="225" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.39959327979999998" blue="0.59430606929999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="wYc-xT-cDM">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="20"/>
+                                        <state key="normal" title="GET">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="40"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="buyButtonPressed:" destination="3EB-2R-kxE" eventType="touchUpInside" id="Eti-Kx-NN6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeA-U6-LmV">
+                                        <rect key="frame" x="300" y="5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="U9D-OX-0YL"/>
+                                            <constraint firstAttribute="height" constant="20" id="o9I-Wf-F5C"/>
+                                        </constraints>
+                                        <state key="normal" image="crossIcon1"/>
+                                        <connections>
+                                            <action selector="cancelButton:" destination="3EB-2R-kxE" eventType="touchUpInside" id="mb7-Ep-SYO"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="☆  Full collection of emojis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ey-fu-X93">
+                                        <rect key="frame" x="73" y="343.5" width="179.5" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Vfo-eN-1WF">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="15"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="30"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="☆  No advertising" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhS-K1-O5Q">
+                                        <rect key="frame" x="73" y="368.5" width="247" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="JqL-Eb-CGz">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="15"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="30"/>
+                                        </variation>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="HsO-ft-s61">
+                                        <rect key="frame" x="10" y="478.5" width="305" height="118.5"/>
+                                        <color key="backgroundColor" red="0.89821239829999999" green="0.82424717219999999" blue="0.020796915869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <string key="text">Install the app and start Premium subscription. After that — Premium subscription will cost only $0.99 per week.
+
+If you choose to buy Premium subscription, payment will be charged to iTunes Account at confirmation of purchase. Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period. Account will be charged for renewal within 24-hours prior to the end of the current period, and identify the cost of the renewal. Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user's Account Settings after purchase. Any unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription to that publication, where applicable.
+
+Terms of use: http://emodji.website/politics-emodji1.html
+Privacy policy: http://emodji.website/politics-emodji.html</string>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        </variation>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="☆  More new products" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSk-1h-zGc">
+                                        <rect key="frame" x="73" y="393.5" width="150.5" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="v3w-3G-2nm">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="15"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="30"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="iZw-E6-tLl" firstAttribute="centerX" secondItem="2xy-r7-21Q" secondAttribute="centerX" id="2bT-Cv-Bsh"/>
+                                    <constraint firstItem="iZw-E6-tLl" firstAttribute="leading" secondItem="2xy-r7-21Q" secondAttribute="leading" constant="50" id="338-Yf-boX"/>
+                                    <constraint firstAttribute="trailing" secondItem="jeA-U6-LmV" secondAttribute="trailing" constant="5" id="4PG-p2-Jvt"/>
+                                    <constraint firstAttribute="bottom" secondItem="tcL-Wk-bJZ" secondAttribute="bottom" constant="50" id="7tK-Ix-MHJ"/>
+                                    <constraint firstItem="tcL-Wk-bJZ" firstAttribute="top" secondItem="2xy-r7-21Q" secondAttribute="top" id="80Q-ET-SOM"/>
+                                    <constraint firstAttribute="trailing" secondItem="G04-ni-Wli" secondAttribute="trailing" constant="5" id="84d-f8-zrv"/>
+                                    <constraint firstItem="HsO-ft-s61" firstAttribute="top" secondItem="iZw-E6-tLl" secondAttribute="bottom" constant="10" id="BDp-zi-IY1"/>
+                                    <constraint firstItem="aSk-1h-zGc" firstAttribute="leading" secondItem="OhS-K1-O5Q" secondAttribute="leading" id="Din-6M-MId"/>
+                                    <constraint firstItem="HsO-ft-s61" firstAttribute="leading" secondItem="2xy-r7-21Q" secondAttribute="leading" constant="10" id="Fer-CR-ycz"/>
+                                    <constraint firstItem="OhS-K1-O5Q" firstAttribute="top" secondItem="7ey-fu-X93" secondAttribute="bottom" constant="5" id="Fwx-0U-F74"/>
+                                    <constraint firstItem="7ey-fu-X93" firstAttribute="centerX" secondItem="4up-JX-fuv" secondAttribute="centerX" id="Nof-Gx-NrQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="iZw-E6-tLl" secondAttribute="trailing" constant="50" id="QEa-Yn-oc8"/>
+                                    <constraint firstAttribute="trailing" secondItem="4up-JX-fuv" secondAttribute="trailing" id="RJT-dI-siC"/>
+                                    <constraint firstAttribute="trailing" secondItem="tcL-Wk-bJZ" secondAttribute="trailing" id="RsM-iX-laR"/>
+                                    <constraint firstItem="9EP-IY-j28" firstAttribute="centerX" secondItem="2xy-r7-21Q" secondAttribute="centerX" id="WgO-e2-O2Y"/>
+                                    <constraint firstItem="aSk-1h-zGc" firstAttribute="top" secondItem="OhS-K1-O5Q" secondAttribute="bottom" constant="5" id="WnH-Dh-hMp"/>
+                                    <constraint firstItem="7ey-fu-X93" firstAttribute="top" secondItem="G04-ni-Wli" secondAttribute="bottom" constant="5" id="aDt-59-BcJ">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="OhS-K1-O5Q" secondAttribute="trailing" constant="5" id="brn-fp-hoP"/>
+                                    <constraint firstItem="tcL-Wk-bJZ" firstAttribute="leading" secondItem="2xy-r7-21Q" secondAttribute="leading" id="dve-0o-4XG"/>
+                                    <constraint firstItem="OhS-K1-O5Q" firstAttribute="leading" secondItem="7ey-fu-X93" secondAttribute="leading" id="fJ8-dZ-1yt"/>
+                                    <constraint firstAttribute="trailing" secondItem="HsO-ft-s61" secondAttribute="trailing" constant="10" id="fqO-7u-ln8"/>
+                                    <constraint firstItem="4up-JX-fuv" firstAttribute="leading" secondItem="2xy-r7-21Q" secondAttribute="leading" id="fsi-cU-hjs"/>
+                                    <constraint firstItem="G04-ni-Wli" firstAttribute="leading" secondItem="2xy-r7-21Q" secondAttribute="leading" constant="5" id="kTC-WX-dBh"/>
+                                    <constraint firstItem="4up-JX-fuv" firstAttribute="height" secondItem="2xy-r7-21Q" secondAttribute="height" multiplier="1:2" id="kXN-74-EYe"/>
+                                    <constraint firstItem="iZw-E6-tLl" firstAttribute="top" secondItem="aSk-1h-zGc" secondAttribute="bottom" constant="5" id="lPT-6F-phz"/>
+                                    <constraint firstItem="9EP-IY-j28" firstAttribute="centerY" secondItem="2xy-r7-21Q" secondAttribute="centerY" multiplier="0.08" id="lpo-iT-LVz"/>
+                                    <constraint firstAttribute="bottom" secondItem="HsO-ft-s61" secondAttribute="bottom" id="nkg-bx-HGJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="4up-JX-fuv" secondAttribute="bottom" id="uY0-2w-xrO"/>
+                                    <constraint firstItem="jeA-U6-LmV" firstAttribute="top" secondItem="2xy-r7-21Q" secondAttribute="top" constant="5" id="v2B-fc-adN"/>
+                                    <constraint firstItem="G04-ni-Wli" firstAttribute="top" secondItem="4up-JX-fuv" secondAttribute="top" id="vcB-lh-lUf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2xy-r7-21Q" secondAttribute="trailing" constant="25" id="2Sp-Uk-YgH"/>
+                            <constraint firstItem="21o-tF-aXK" firstAttribute="top" secondItem="2xy-r7-21Q" secondAttribute="bottom" constant="25" id="33Q-vz-Suo"/>
+                            <constraint firstItem="2xy-r7-21Q" firstAttribute="leading" secondItem="tE0-GQ-FzN" secondAttribute="leading" constant="25" id="7sI-TL-IEb"/>
+                            <constraint firstItem="2xy-r7-21Q" firstAttribute="top" secondItem="tA0-pw-iRn" secondAttribute="bottom" constant="25" id="Mi9-50-PrL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xXX-9T-Eru"/>
+                    </view>
+                    <connections>
+                        <outlet property="backView" destination="4up-JX-fuv" id="uqy-08-nNn"/>
+                        <outlet property="buyButton" destination="iZw-E6-tLl" id="JcJ-LX-By2"/>
+                        <outlet property="cancelButton" destination="jeA-U6-LmV" id="cPG-nT-h3V"/>
+                        <outlet property="infoTextView" destination="HsO-ft-s61" id="waO-1I-5O3"/>
+                        <outlet property="mainView" destination="2xy-r7-21Q" id="icr-3U-Dsx"/>
+                        <outlet property="restorePurchase" destination="9EP-IY-j28" id="hgA-2a-TEw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZqU-uf-ovp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2006" y="757"/>
         </scene>
     </scenes>
     <resources>
         <image name="activity" width="33" height="33"/>
         <image name="background_launch" width="360" height="640"/>
+        <image name="crossIcon1" width="20" height="20"/>
         <image name="emoji_1" width="250" height="444"/>
         <image name="emoji_2" width="250" height="444"/>
         <image name="emoji_3" width="250" height="444"/>
