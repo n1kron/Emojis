@@ -12,6 +12,7 @@ import Alamofire
 class KeyboardViewController: UIInputViewController {
     
     var delegateKeyboardView: KeyboardView!
+    var smilesArr: [UIImage] = []
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -23,10 +24,6 @@ class KeyboardViewController: UIInputViewController {
         let nib = UINib(nibName: "KeyboardView", bundle: nil)
         let objects = nib.instantiate(withOwner: nil, options: nil)
         delegateKeyboardView = objects.first as? KeyboardView
-        
-        for i in 1...4 {
-            EmojisData.shared.getData(page: i)
-        }
         
         let keyboardView = KeyboardView.instanceFromNib()
         keyboardView.collectionView.register(UINib.init(nibName: "KeyboardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "KeyboardCollectionViewCell")
@@ -47,9 +44,7 @@ class KeyboardViewController: UIInputViewController {
         keyboardView.backspaceButton.addTarget(self, action: #selector(backspace), for: .touchUpInside)
         keyboardView.spacebarButton.addTarget(self, action: #selector(spacebar), for: .touchUpInside)
         
-        NotificationCenter.default.addObserver(forName: Notification.Name("emojis"), object: nil, queue: nil) {(notification) in
-            keyboardView.collectionView.reloadData()
-        }
+        fillSmilesArr(CV: keyboardView.collectionView)
     }
     
     @objc func spacebar() {
@@ -66,12 +61,32 @@ class KeyboardViewController: UIInputViewController {
     
     override func textDidChange(_ textInput: UITextInput?) {
     }
+    
+    func fillSmilesArr(CV: UICollectionView) {
+        smilesArr.removeAll()
+        for index in 0...49 {
+            smilesArr.append(UIImage(named: "b-w\(index)")!)
+        }
+        
+        for index in 0...99 {
+            smilesArr.append(UIImage(named: "smile\(index)")!)
+        }
+        
+        for index in 0...171 {
+            smilesArr.append(UIImage(named: "obj\(index)")!)
+        }
+        
+        for index in 0...39 {
+            smilesArr.append(UIImage(named: "horror\(index)")!)
+        }
+        CV.reloadData()
+    }
 }
 
 extension KeyboardViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return EmojisData.shared.allEmojiesList.count
+        return smilesArr.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -83,14 +98,8 @@ extension KeyboardViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let imageUrl = URL(string: Consts.isIpad ? EmojisData.shared.allEmojiesList[indexPath.row].bigImage : EmojisData.shared.allEmojiesList[indexPath.row].smallImage)
-        if let data = try? Data(contentsOf: imageUrl!) {
-            if let image = UIImage(data: data) {
-                DispatchQueue.main.async {
-                    UIPasteboard.general.image = image
-                }
-            }
-        }
+        guard !smilesArr.isEmpty else { return }
+        UIPasteboard.general.image = self.smilesArr[indexPath.row]
     }
     
     func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
@@ -105,11 +114,9 @@ extension KeyboardViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "KeyboardCollectionViewCell", for: indexPath) as! KeyboardCollectionViewCell
-        
-        let image = Consts.isIpad ? EmojisData.shared.allEmojiesList[indexPath.row].bigImage : EmojisData.shared.allEmojiesList[indexPath.row].smallImage
-        cell.imageView.kf.setImage(with: URL(string: image), completionHandler: { (image, error, cacheType, imageUrl) in
-        })
-        
+        if !smilesArr.isEmpty {
+            cell.imageView.image = smilesArr[indexPath.row]
+        }
         return cell
     }
 }

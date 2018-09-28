@@ -28,10 +28,10 @@
             </objects>
             <point key="canvasLocation" x="-1132" y="42"/>
         </scene>
-        <!--Animals & Nature-->
+        <!--Black & White-->
         <scene sceneID="9yP-Nh-zU7">
             <objects>
-                <viewController id="Ffa-FN-2qg" customClass="NatureViewController" customModule="Mr__Emojis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ffa-FN-2qg" customClass="BlackAndWiteViewController" customModule="Mr__Emojis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yMa-0T-dzK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,7 +46,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SecondCollectionViewCell" id="sEW-CF-0Wu" customClass="NatureCollectionViewCell" customModule="Mr__Emojis" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BlackAndWhiteCollectionViewCell" id="sEW-CF-0Wu" customClass="BlackAndWhiteCollectionViewCell" customModule="Mr__Emojis" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -84,7 +84,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="P4N-li-a6x"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Animals &amp; Nature" image="nature" id="ioe-5v-fO4"/>
+                    <tabBarItem key="tabBarItem" title="Black &amp; White" image="b&amp;w" id="ioe-5v-fO4"/>
                     <connections>
                         <outlet property="collectionView" destination="g9k-zE-ofM" id="2hg-95-uDc"/>
                         <segue destination="tpe-hd-sKi" kind="presentation" identifier="ShowExplanation" id="Adn-EN-qZ8"/>
@@ -94,7 +94,7 @@
             </objects>
             <point key="canvasLocation" x="1932" y="-428"/>
         </scene>
-        <!--Smileys & People-->
+        <!--Smileys-->
         <scene sceneID="jdS-LO-A4h">
             <objects>
                 <viewController id="3BV-8O-F6C" customClass="SmileysViewController" customModule="Mr__Emojis" customModuleProvider="target" sceneMemberID="viewController">
@@ -112,7 +112,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FirstCollectionViewCell" id="zDU-WQ-3GA" customClass="SmileysCollectionViewCell" customModule="Mr__Emojis" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SmileysCollectionViewCell" id="zDU-WQ-3GA" customClass="SmileysCollectionViewCell" customModule="Mr__Emojis" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -150,7 +150,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Tab-pI-ugv"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Smileys &amp; People" image="people" id="bv5-Wd-9Cy"/>
+                    <tabBarItem key="tabBarItem" title="Smileys" image="people" id="bv5-Wd-9Cy"/>
                     <connections>
                         <outlet property="collectionView" destination="AcS-p9-F7N" id="gkR-rL-kGE"/>
                         <segue destination="tpe-hd-sKi" kind="presentation" identifier="ShowExplanation" id="CuJ-rV-uNH"/>
@@ -468,7 +468,7 @@
         <!--App Name-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FoodViewController" customModule="Mr__Emojis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ObjectsViewController" customModule="Mr__Emojis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -483,7 +483,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ThirdCollectionViewCell" id="mWi-KU-TJN" customClass="FoodCollectionViewCell" customModule="Mr__Emojis" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ObjectsCollectionViewCell" id="mWi-KU-TJN" customClass="ObjectsCollectionViewCell" customModule="Mr__Emojis" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -521,7 +521,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Food &amp; Drink" image="food" id="yXZ-Ss-ujr"/>
+                    <tabBarItem key="tabBarItem" title="Objects" image="food" id="yXZ-Ss-ujr"/>
                     <navigationItem key="navigationItem" title="App Name" id="NXY-M7-luc">
                         <barButtonItem key="backBarButtonItem" title=" " id="xdD-oI-Sd5"/>
                         <barButtonItem key="leftBarButtonItem" title="Item" image="info_icon" style="plain" id="sxk-B1-M1w"/>
@@ -539,10 +539,10 @@
             </objects>
             <point key="canvasLocation" x="2302" y="395"/>
         </scene>
-        <!--Activity-->
+        <!--Horror-->
         <scene sceneID="rbK-EF-A3s">
             <objects>
-                <viewController id="xee-gb-CsO" customClass="ActivityViewController" customModule="Mr__Emojis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xee-gb-CsO" customClass="HorrorViewController" customModule="Mr__Emojis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v2A-zW-JZ4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -557,7 +557,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ActivityCollectionViewCell" id="8UF-Rh-mB0" customClass="ActivityCollectionViewCell" customModule="Mr__Emojis" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HorrorCollectionViewCell" id="8UF-Rh-mB0" customClass="HorrorCollectionViewCell" customModule="Mr__Emojis" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -595,7 +595,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fCd-Q0-Z1i"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Activity" image="activity" id="oMk-D6-W4q"/>
+                    <tabBarItem key="tabBarItem" title="Horror" image="activity" id="oMk-D6-W4q"/>
                     <connections>
                         <outlet property="collectionView" destination="KsS-Wl-uGn" id="1ap-8t-5K8"/>
                         <segue destination="tpe-hd-sKi" kind="presentation" identifier="ShowExplanation" id="4Kv-XA-BoG"/>
@@ -1000,20 +1000,20 @@ Privacy policy: http://emodji.website/politics-emodji.html</string>
         </scene>
     </scenes>
     <resources>
-        <image name="activity" width="33" height="33"/>
-        <image name="background_launch" width="360" height="640"/>
-        <image name="crossIcon1" width="20" height="20"/>
-        <image name="emoji_1" width="250" height="444"/>
-        <image name="emoji_2" width="250" height="444"/>
-        <image name="emoji_3" width="250" height="444"/>
-        <image name="food" width="33" height="33"/>
-        <image name="image1" width="194" height="172"/>
-        <image name="info_icon" width="33" height="33"/>
-        <image name="nature" width="33" height="33"/>
-        <image name="people" width="33" height="33"/>
-        <image name="settings_icon" width="32" height="32"/>
+        <image name="activity" width="75" height="75"/>
+        <image name="b&amp;w" width="80" height="80"/>
+        <image name="background_launch" width="1080" height="1920"/>
+        <image name="crossIcon1" width="8" height="8"/>
+        <image name="emoji_1" width="250" height="444.66665649414062"/>
+        <image name="emoji_2" width="250" height="444.66665649414062"/>
+        <image name="emoji_3" width="250" height="444.66665649414062"/>
+        <image name="food" width="75" height="75"/>
+        <image name="image1" width="582" height="518"/>
+        <image name="info_icon" width="75" height="75"/>
+        <image name="people" width="75" height="75"/>
+        <image name="settings_icon" width="72" height="72"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="i9E-VO-rR0"/>
+        <segue reference="4Kv-XA-BoG"/>
     </inferredMetricsTieBreakers>
 </document>

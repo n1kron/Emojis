@@ -14,18 +14,16 @@
 		9900119B21433230004A713C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9900119A21433230004A713C /* OnboardingViewController.swift */; };
 		99165EF921408A6100B5E71D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165EF821408A6100B5E71D /* TabBarViewController.swift */; };
 		99165EFB21408C8300B5E71D /* SmileysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165EFA21408C8300B5E71D /* SmileysViewController.swift */; };
-		99165EFD21408C9300B5E71D /* NatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165EFC21408C9300B5E71D /* NatureViewController.swift */; };
-		99165F5E2141715400B5E71D /* EmojisData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F5D2141715400B5E71D /* EmojisData.swift */; };
+		99165EFD21408C9300B5E71D /* BlackAndWiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165EFC21408C9300B5E71D /* BlackAndWiteViewController.swift */; };
 		99165F60214171A200B5E71D /* Emojis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F5F214171A200B5E71D /* Emojis.swift */; };
 		99165F642141761700B5E71D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99165F632141761700B5E71D /* Alamofire.framework */; };
-		99165F662141769B00B5E71D /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F652141769B00B5E71D /* ActivityViewController.swift */; };
+		99165F662141769B00B5E71D /* HorrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F652141769B00B5E71D /* HorrorViewController.swift */; };
 		99165F682141787900B5E71D /* Utiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F672141787900B5E71D /* Utiles.swift */; };
 		99165F69214186B500B5E71D /* Emojis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F5F214171A200B5E71D /* Emojis.swift */; };
-		99165F6A214186BC00B5E71D /* EmojisData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F5D2141715400B5E71D /* EmojisData.swift */; };
 		99165F7821428E6B00B5E71D /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A312A21404219000D3993 /* Consts.swift */; };
 		99165F792142976E00B5E71D /* Utiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F672141787900B5E71D /* Utiles.swift */; };
 		996F5BFF21396643008BA54F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5BFE21396643008BA54F /* AppDelegate.swift */; };
-		996F5C0121396643008BA54F /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5C0021396643008BA54F /* FoodViewController.swift */; };
+		996F5C0121396643008BA54F /* ObjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5C0021396643008BA54F /* ObjectsViewController.swift */; };
 		996F5C0421396643008BA54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 996F5C0221396643008BA54F /* Main.storyboard */; };
 		996F5C0621396645008BA54F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996F5C0521396645008BA54F /* Assets.xcassets */; };
 		996F5C0921396645008BA54F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 996F5C0721396645008BA54F /* LaunchScreen.storyboard */; };
@@ -106,18 +104,17 @@
 		9900119A21433230004A713C /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		99165EF821408A6100B5E71D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		99165EFA21408C8300B5E71D /* SmileysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileysViewController.swift; sourceTree = "<group>"; };
-		99165EFC21408C9300B5E71D /* NatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureViewController.swift; sourceTree = "<group>"; };
-		99165F5D2141715400B5E71D /* EmojisData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojisData.swift; sourceTree = "<group>"; };
+		99165EFC21408C9300B5E71D /* BlackAndWiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackAndWiteViewController.swift; sourceTree = "<group>"; };
 		99165F5F214171A200B5E71D /* Emojis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emojis.swift; sourceTree = "<group>"; };
 		99165F612141761400B5E71D /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99165F632141761700B5E71D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		99165F652141769B00B5E71D /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		99165F652141769B00B5E71D /* HorrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorrorViewController.swift; sourceTree = "<group>"; };
 		99165F672141787900B5E71D /* Utiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utiles.swift; sourceTree = "<group>"; };
 		99165F6B214186CD00B5E71D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99165F6D214186D100B5E71D /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		996F5BFB21396643008BA54F /* Mr. Emojis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mr. Emojis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		996F5BFE21396643008BA54F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		996F5C0021396643008BA54F /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		996F5C0021396643008BA54F /* ObjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsViewController.swift; sourceTree = "<group>"; };
 		996F5C0321396643008BA54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		996F5C0521396645008BA54F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		996F5C0821396645008BA54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -319,9 +316,9 @@
 			children = (
 				99C0C04921453F88000AF5BC /* Tools */,
 				99165EFA21408C8300B5E71D /* SmileysViewController.swift */,
-				99165EFC21408C9300B5E71D /* NatureViewController.swift */,
-				996F5C0021396643008BA54F /* FoodViewController.swift */,
-				99165F652141769B00B5E71D /* ActivityViewController.swift */,
+				99165EFC21408C9300B5E71D /* BlackAndWiteViewController.swift */,
+				996F5C0021396643008BA54F /* ObjectsViewController.swift */,
+				99165F652141769B00B5E71D /* HorrorViewController.swift */,
 				999A3120213FF1AF000D3993 /* InformationViewController.swift */,
 				999A312821402F63000D3993 /* ExplanationsViewController.swift */,
 				1BCB83F421515DD300B8B3DE /* BuySubscriptionViewController.swift */,
@@ -334,7 +331,6 @@
 			children = (
 				1BCB83F221515A2E00B8B3DE /* SwiftLoader.swift */,
 				1BCB83F02151587800B8B3DE /* SubscriptionManager.swift */,
-				99165F5D2141715400B5E71D /* EmojisData.swift */,
 				999A312A21404219000D3993 /* Consts.swift */,
 				99165F672141787900B5E71D /* Utiles.swift */,
 			);
@@ -623,9 +619,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BCB83F321515A2E00B8B3DE /* SwiftLoader.swift in Sources */,
-				99165F5E2141715400B5E71D /* EmojisData.swift in Sources */,
-				99165EFD21408C9300B5E71D /* NatureViewController.swift in Sources */,
-				996F5C0121396643008BA54F /* FoodViewController.swift in Sources */,
+				99165EFD21408C9300B5E71D /* BlackAndWiteViewController.swift in Sources */,
+				996F5C0121396643008BA54F /* ObjectsViewController.swift in Sources */,
 				99165F60214171A200B5E71D /* Emojis.swift in Sources */,
 				999A312B21404219000D3993 /* Consts.swift in Sources */,
 				999A3125213FF422000D3993 /* Cells.swift in Sources */,
@@ -638,7 +633,7 @@
 				9900119B21433230004A713C /* OnboardingViewController.swift in Sources */,
 				1BCB83F12151587800B8B3DE /* SubscriptionManager.swift in Sources */,
 				996F5C4621397DE7008BA54F /* KeyboardViewController.swift in Sources */,
-				99165F662141769B00B5E71D /* ActivityViewController.swift in Sources */,
+				99165F662141769B00B5E71D /* HorrorViewController.swift in Sources */,
 				999A312921402F63000D3993 /* ExplanationsViewController.swift in Sources */,
 				999A3121213FF1AF000D3993 /* InformationViewController.swift in Sources */,
 			);
@@ -670,7 +665,6 @@
 				99165F69214186B500B5E71D /* Emojis.swift in Sources */,
 				99165F792142976E00B5E71D /* Utiles.swift in Sources */,
 				996F5C33213966FB008BA54F /* KeyboardViewController.swift in Sources */,
-				99165F6A214186BC00B5E71D /* EmojisData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

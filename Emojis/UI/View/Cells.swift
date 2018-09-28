@@ -16,14 +16,14 @@ class SmileysCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
 }
 
-class NatureCollectionViewCell: UICollectionViewCell {
+class BlackAndWhiteCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
 }
 
-class FoodCollectionViewCell: UICollectionViewCell {
+class ObjectsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
 }
 
-class ActivityCollectionViewCell: UICollectionViewCell {
+class HorrorCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
 }

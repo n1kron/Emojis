@@ -15,23 +15,17 @@ class SmileysViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Utiles.shared.configureFlowLayout(collectionView)
-        EmojisData.shared.getData(page: 1)
-        NotificationCenter.default.addObserver(forName: Notification.Name("emojis"), object: nil, queue: nil) { [weak self] (notification) in
-            self?.collectionView.reloadData()
-        }
     }
 }
 
 extension SmileysViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return EmojisData.shared.smileysList.count
+        return 100
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FirstCollectionViewCell", for: indexPath) as! SmileysCollectionViewCell
-        let image = EmojisData.shared.smileysList[indexPath.row].bigImage
-        cell.imageView.kf.setImage(with: URL(string: image), completionHandler: { (image, error, cacheType, imageUrl) in
-        })
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SmileysCollectionViewCell", for: indexPath) as! SmileysCollectionViewCell
+        cell.imageView.image = UIImage(named: "smile\(indexPath.row)")
         return cell
     }
     
