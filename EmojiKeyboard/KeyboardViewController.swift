@@ -6,13 +6,13 @@
 //  Copyright © 2018  Kostantin Zarubin. All rights reserved.
 //
 import UIKit
-import Kingfisher
-import Alamofire
 
 class KeyboardViewController: UIInputViewController {
     
-    var delegateKeyboardView: KeyboardView!
+    weak var delegateKeyboardView: KeyboardView!
     var smilesArr: [UIImage] = []
+    
+    var smilesImageNames: [String] = []
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -20,29 +20,35 @@ class KeyboardViewController: UIInputViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nib = UINib(nibName: "KeyboardView", bundle: nil)
-        let objects = nib.instantiate(withOwner: nil, options: nil)
-        delegateKeyboardView = objects.first as? KeyboardView
         
-        let keyboardView = KeyboardView.instanceFromNib()
-        keyboardView.collectionView.register(UINib.init(nibName: "KeyboardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "KeyboardCollectionViewCell")
-        keyboardView.collectionView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(keyboardView)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+//        let nib = UINib(nibName: "KeyboardView", bundle: nil)
+//        let objects = nib.instantiate(withOwner: nil, options: nil)
+//        delegateKeyboardView = objects.first as? KeyboardView
         
-        keyboardView.collectionView.delegate = self
-        keyboardView.collectionView.dataSource = self
-        fillSmilesArr(CV: keyboardView.collectionView)
+        delegateKeyboardView = KeyboardView.instanceFromNib()
+        delegateKeyboardView.collectionView.register(UINib.init(nibName: "KeyboardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "KeyboardCollectionViewCell")
+        delegateKeyboardView.collectionView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(delegateKeyboardView)
+        
+        delegateKeyboardView.collectionView.delegate = self
+        delegateKeyboardView.collectionView.dataSource = self
+        fillSmilesArr()
+        delegateKeyboardView.collectionView.reloadData()
         
         NSLayoutConstraint.activate([
-            keyboardView.leftAnchor.constraint(equalTo: (inputView?.leftAnchor)!),
-            keyboardView.topAnchor.constraint(equalTo: (inputView?.topAnchor)!),
-            keyboardView.rightAnchor.constraint(equalTo: (inputView?.rightAnchor)!),
-            keyboardView.bottomAnchor.constraint(equalTo: (inputView?.bottomAnchor)!)
+            delegateKeyboardView.leftAnchor.constraint(equalTo: (inputView?.leftAnchor)!),
+            delegateKeyboardView.topAnchor.constraint(equalTo: (inputView?.topAnchor)!),
+            delegateKeyboardView.rightAnchor.constraint(equalTo: (inputView?.rightAnchor)!),
+            delegateKeyboardView.bottomAnchor.constraint(equalTo: (inputView?.bottomAnchor)!)
             ])
         
-        keyboardView.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
-        keyboardView.backspaceButton.addTarget(self, action: #selector(backspace), for: .touchUpInside)
-        keyboardView.spacebarButton.addTarget(self, action: #selector(spacebar), for: .touchUpInside)
+        delegateKeyboardView.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
+        delegateKeyboardView.backspaceButton.addTarget(self, action: #selector(backspace), for: .touchUpInside)
+        delegateKeyboardView.spacebarButton.addTarget(self, action: #selector(spacebar), for: .touchUpInside)
     }
     
     @objc func spacebar() {
@@ -60,45 +66,22 @@ class KeyboardViewController: UIInputViewController {
     override func textDidChange(_ textInput: UITextInput?) {
     }
     
-    func fillSmilesArr(CV: UICollectionView) {
-        smilesArr.removeAll()
-        DispatchQueue.main.async {
-            for index in 0...49 {
-                if let image = UIImage(named: "b-w\(index)") {
-                    self.smilesArr.append(image)
-                }
-            }
-            
-            for index in 0...99 {
-                if let image = UIImage(named: "smile\(index)") {
-                    self.smilesArr.append(image)
-                }
-            }
-            
-            for index in 0...171 {
-                if let image = UIImage(named: "obj\(index)") {
-                    self.smilesArr.append(image)
-                }
-            }
-            
-            for index in 0...39 {
-                if let image = UIImage(named: "horror\(index)") {
-                    self.smilesArr.append(image)
-                }
-            }
-        }
-        CV.reloadData()
+    func fillSmilesArr() {
+        smilesImageNames.removeAll()
+        let imageNames = (0...361).map { "emojis\($0)" }
+        smilesImageNames.append(contentsOf: imageNames)
     }
+    
 }
 
 extension KeyboardViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return smilesArr.count
+        return smilesImageNames.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.size.width * 0.12 , height: UIScreen.main.bounds.size.width * 0.12)
+        return CGSize(width: UIScreen.main.bounds.size.width * 0.11 , height: UIScreen.main.bounds.size.width * 0.11 )
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -106,7 +89,9 @@ extension KeyboardViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        UIPasteboard.general.image = self.smilesArr[indexPath.row]
+        let imageName = smilesImageNames[indexPath.row]
+        let image = UIImage(named: imageName)
+        UIPasteboard.general.image = image
     }
     
     func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
@@ -121,8 +106,12 @@ extension KeyboardViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "KeyboardCollectionViewCell", for: indexPath) as! KeyboardCollectionViewCell
-        cell.imageView.image = smilesArr[indexPath.row]
-        
+        DispatchQueue.main.async {
+            let imageName = self.smilesImageNames[indexPath.row]
+            let image = UIImage(named: imageName)
+            cell.imageView.image = image
+        }
+
         return cell
     }
 }

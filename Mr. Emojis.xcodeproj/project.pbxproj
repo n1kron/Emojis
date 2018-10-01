@@ -16,7 +16,6 @@
 		99165EFB21408C8300B5E71D /* SmileysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165EFA21408C8300B5E71D /* SmileysViewController.swift */; };
 		99165EFD21408C9300B5E71D /* BlackAndWiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165EFC21408C9300B5E71D /* BlackAndWiteViewController.swift */; };
 		99165F60214171A200B5E71D /* Emojis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F5F214171A200B5E71D /* Emojis.swift */; };
-		99165F642141761700B5E71D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99165F632141761700B5E71D /* Alamofire.framework */; };
 		99165F662141769B00B5E71D /* HorrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F652141769B00B5E71D /* HorrorViewController.swift */; };
 		99165F682141787900B5E71D /* Utiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F672141787900B5E71D /* Utiles.swift */; };
 		99165F69214186B500B5E71D /* Emojis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99165F5F214171A200B5E71D /* Emojis.swift */; };
@@ -45,8 +44,6 @@
 		999A312921402F63000D3993 /* ExplanationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A312821402F63000D3993 /* ExplanationsViewController.swift */; };
 		999A312B21404219000D3993 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A312A21404219000D3993 /* Consts.swift */; };
 		99AF52C621529CBB000E798E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99AF52C521529CBB000E798E /* Foundation.framework */; };
-		99AF52C721529CE1000E798E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99AF52C521529CBB000E798E /* Foundation.framework */; };
-		99AF52C921529CE5000E798E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99AF52C821529CE5000E798E /* Alamofire.framework */; };
 		99C0C04B21457E25000AF5BC /* Pods_EmojiKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BA8BF5742B1E84D2D1BC1E /* Pods_EmojiKeyboard.framework */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +135,7 @@
 		99AF52C521529CBB000E798E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		99AF52C821529CE5000E798E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99AF52CA2152ACD9000E798E /* Mr. Emojis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Mr. Emojis.entitlements"; sourceTree = "<group>"; };
+		99FE580E21611C96006CA0E9 /* EmojiKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EmojiKeyboard.entitlements; sourceTree = "<group>"; };
 		C291F11DFB4C1C557787D305 /* Pods-Mr. Emoji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mr. Emoji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mr. Emoji/Pods-Mr. Emoji.debug.xcconfig"; sourceTree = "<group>"; };
 		D90B58D5A53C6AEB24127262 /* Pods_Mr__Emojis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mr__Emojis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1BA8BF5742B1E84D2D1BC1E /* Pods_EmojiKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmojiKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,7 +148,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				99AF52C621529CBB000E798E /* Foundation.framework in Frameworks */,
-				99165F642141761700B5E71D /* Alamofire.framework in Frameworks */,
 				703E98A571070BC0CCCDCB98 /* Pods_Mr__Emojis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,8 +170,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99AF52C921529CE5000E798E /* Alamofire.framework in Frameworks */,
-				99AF52C721529CE1000E798E /* Foundation.framework in Frameworks */,
 				99C0C04B21457E25000AF5BC /* Pods_EmojiKeyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +262,7 @@
 		996F5C31213966FB008BA54F /* EmojiKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				99FE580E21611C96006CA0E9 /* EmojiKeyboard.entitlements */,
 				996F5C32213966FB008BA54F /* KeyboardViewController.swift */,
 				996F5C34213966FB008BA54F /* Info.plist */,
 			);
@@ -474,6 +470,9 @@
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
 							};
+							com.apple.Push = {
+								enabled = 0;
+							};
 						};
 					};
 				};
@@ -547,7 +546,6 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Mr. Emojis/Pods-Mr. Emojis-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
@@ -555,12 +553,12 @@
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
@@ -568,6 +566,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -957,7 +956,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5C8ZLNKV2V;
-				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = EmojiKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -980,7 +979,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5C8ZLNKV2V;
-				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = EmojiKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

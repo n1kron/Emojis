@@ -5,8 +5,6 @@ target 'EmojiKeyboard' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   # Pods for EmojiKeyboard
-  pod 'Alamofire'
-  pod 'Kingfisher'
 end
 
 target 'Mr. Emojis' do
