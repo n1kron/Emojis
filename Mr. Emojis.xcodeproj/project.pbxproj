@@ -45,6 +45,8 @@
 		999A312B21404219000D3993 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A312A21404219000D3993 /* Consts.swift */; };
 		99AF52C621529CBB000E798E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99AF52C521529CBB000E798E /* Foundation.framework */; };
 		99C0C04B21457E25000AF5BC /* Pods_EmojiKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BA8BF5742B1E84D2D1BC1E /* Pods_EmojiKeyboard.framework */; };
+		99FE5817216543CF006CA0E9 /* FullAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE5816216543CF006CA0E9 /* FullAccessView.swift */; };
+		99FE5818216543D8006CA0E9 /* FullAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE5816216543CF006CA0E9 /* FullAccessView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +138,7 @@
 		99AF52C821529CE5000E798E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99AF52CA2152ACD9000E798E /* Mr. Emojis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Mr. Emojis.entitlements"; sourceTree = "<group>"; };
 		99FE580E21611C96006CA0E9 /* EmojiKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EmojiKeyboard.entitlements; sourceTree = "<group>"; };
+		99FE5816216543CF006CA0E9 /* FullAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullAccessView.swift; sourceTree = "<group>"; };
 		C291F11DFB4C1C557787D305 /* Pods-Mr. Emoji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mr. Emoji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mr. Emoji/Pods-Mr. Emoji.debug.xcconfig"; sourceTree = "<group>"; };
 		D90B58D5A53C6AEB24127262 /* Pods_Mr__Emojis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mr__Emojis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1BA8BF5742B1E84D2D1BC1E /* Pods_EmojiKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmojiKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -292,6 +295,7 @@
 		996F5C3F21396F39008BA54F /* KeyboardView */ = {
 			isa = PBXGroup;
 			children = (
+				99FE5816216543CF006CA0E9 /* FullAccessView.swift */,
 				996F5C4721398E90008BA54F /* KeyboardView.swift */,
 				996F5C4321396FDB008BA54F /* KeyboardView.xib */,
 				996F5C4A21399460008BA54F /* KeyboardCollectionViewCell.xib */,
@@ -635,6 +639,7 @@
 				99165F662141769B00B5E71D /* HorrorViewController.swift in Sources */,
 				999A312921402F63000D3993 /* ExplanationsViewController.swift in Sources */,
 				999A3121213FF1AF000D3993 /* InformationViewController.swift in Sources */,
+				99FE5817216543CF006CA0E9 /* FullAccessView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,6 +663,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99FE5818216543D8006CA0E9 /* FullAccessView.swift in Sources */,
 				996F5C492139910B008BA54F /* KeyboardView.swift in Sources */,
 				99165F7821428E6B00B5E71D /* Consts.swift in Sources */,
 				999A3126213FF5EF000D3993 /* Cells.swift in Sources */,

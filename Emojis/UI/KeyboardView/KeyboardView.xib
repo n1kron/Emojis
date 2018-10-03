@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,6 +52,30 @@
                     <rect key="frame" x="55" y="150" width="265" height="45"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </button>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pHW-EL-dWk" customClass="FullAccessView" customModule="EmojiKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="10" y="10" width="355" height="130"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please, allow full access to send emoji" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtU-8c-3EL">
+                            <rect key="frame" x="10" y="54.5" width="335" height="21.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                            </variation>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="TtU-8c-3EL" firstAttribute="leading" secondItem="pHW-EL-dWk" secondAttribute="leading" constant="10" id="f8d-KN-O42"/>
+                        <constraint firstAttribute="trailing" secondItem="TtU-8c-3EL" secondAttribute="trailing" constant="10" id="nb3-X2-w9o"/>
+                        <constraint firstItem="TtU-8c-3EL" firstAttribute="centerX" secondItem="pHW-EL-dWk" secondAttribute="centerX" id="oIs-61-gTY"/>
+                        <constraint firstItem="TtU-8c-3EL" firstAttribute="centerY" secondItem="pHW-EL-dWk" secondAttribute="centerY" id="qW9-is-oVa"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="TtU-8c-3EL" id="4rN-5j-9gQ"/>
+                    </connections>
+                </view>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
@@ -63,9 +87,13 @@
                 <constraint firstItem="mPd-4Y-Mxv" firstAttribute="top" secondItem="gT3-jP-opx" secondAttribute="bottom" constant="5" id="Gg0-XI-JJr"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mXA-Kr-9BE" secondAttribute="trailing" constant="5" id="MBW-OO-wBU"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mPd-4Y-Mxv" secondAttribute="bottom" constant="5" id="TOO-BD-TSX"/>
+                <constraint firstItem="pHW-EL-dWk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="WUs-Vi-My8"/>
+                <constraint firstItem="mXA-Kr-9BE" firstAttribute="top" secondItem="pHW-EL-dWk" secondAttribute="bottom" constant="10" id="ZvJ-zO-xIy"/>
                 <constraint firstItem="gT3-jP-opx" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="ahp-X1-Nn3"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mXA-Kr-9BE" secondAttribute="bottom" constant="5" id="c9N-45-4H6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pHW-EL-dWk" secondAttribute="trailing" constant="10" id="d8g-9j-Iy1"/>
                 <constraint firstItem="ULs-cd-5tM" firstAttribute="top" secondItem="gT3-jP-opx" secondAttribute="bottom" constant="5" id="hYz-2T-xsA"/>
+                <constraint firstItem="pHW-EL-dWk" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="ieE-R1-5jN"/>
                 <constraint firstItem="mXA-Kr-9BE" firstAttribute="leading" secondItem="mPd-4Y-Mxv" secondAttribute="trailing" constant="5" id="tsZ-ff-adb"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -73,14 +101,15 @@
             <connections>
                 <outlet property="backspaceButton" destination="mXA-Kr-9BE" id="mQV-3Y-5s6"/>
                 <outlet property="collectionView" destination="gT3-jP-opx" id="EYo-pX-cVT"/>
+                <outlet property="fullAccessView" destination="pHW-EL-dWk" id="OmI-mT-Y0f"/>
                 <outlet property="nextKeyboardButton" destination="ULs-cd-5tM" id="AJH-HJ-I2S"/>
                 <outlet property="spacebarButton" destination="mPd-4Y-Mxv" id="1UJ-ov-uHV"/>
             </connections>
-            <point key="canvasLocation" x="40.5" y="-1"/>
+            <point key="canvasLocation" x="39.200000000000003" y="-1.7991004497751126"/>
         </view>
     </objects>
     <resources>
-        <image name="backspace" width="33" height="33"/>
-        <image name="next_keyboard" width="33" height="33"/>
+        <image name="backspace" width="75" height="75"/>
+        <image name="next_keyboard" width="75" height="75"/>
     </resources>
 </document>

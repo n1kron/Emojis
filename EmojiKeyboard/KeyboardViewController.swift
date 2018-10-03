@@ -8,11 +8,20 @@
 import UIKit
 
 class KeyboardViewController: UIInputViewController {
-    
+
     weak var delegateKeyboardView: KeyboardView!
     var smilesArr: [UIImage] = []
     
     var smilesImageNames: [String] = []
+    var hasAccess: Bool {
+        get {
+            if #available(iOS 11.0, *) {
+                return self.hasFullAccess
+            } else {
+                return UIDevice.current.identifierForVendor != nil
+            }
+        }
+    }
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -89,9 +98,28 @@ extension KeyboardViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let imageName = smilesImageNames[indexPath.row]
-        let image = UIImage(named: imageName)
-        UIPasteboard.general.image = image
+        if hasAccess {
+            delegateKeyboardView.fullAccessView.descriptionLabel.text = "Сopied. Tap the text field and select <Paste>"
+            UIView.animate(withDuration: 0.3, delay: 0, options: [], animations: {
+                self.delegateKeyboardView.fullAccessView.alpha = 1
+            }) { (finished) in
+                UIView.animate(withDuration: 0.3, delay: 1, options: [], animations: {
+                    self.delegateKeyboardView.fullAccessView.alpha = 0
+                }, completion: nil)
+            }
+            let imageName = smilesImageNames[indexPath.row]
+            let image = UIImage(named: imageName)
+            UIPasteboard.general.image = image
+        } else {
+            delegateKeyboardView.fullAccessView.descriptionLabel.text = "Please, allow full access to send emoji"
+            UIView.animate(withDuration: 0.3, delay: 0, options: [], animations: {
+                self.delegateKeyboardView.fullAccessView.alpha = 1
+            }) { (finished) in
+                UIView.animate(withDuration: 0.3, delay: 1, options: [], animations: {
+                    self.delegateKeyboardView.fullAccessView.alpha = 0
+                }, completion: nil)
+            }
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {

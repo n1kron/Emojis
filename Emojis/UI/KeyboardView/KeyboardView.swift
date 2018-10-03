@@ -14,6 +14,7 @@ class KeyboardView: UIView {
     @IBOutlet weak var backspaceButton: KeyboardButton!
     @IBOutlet var nextKeyboardButton: KeyboardButton!
     @IBOutlet weak var spacebarButton: KeyboardButton!
+    @IBOutlet weak var fullAccessView: FullAccessView!
     @IBOutlet weak var collectionView: UICollectionView!
     
     class func instanceFromNib() -> KeyboardView {
