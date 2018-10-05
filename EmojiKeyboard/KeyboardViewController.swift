@@ -12,6 +12,8 @@ class KeyboardViewController: UIInputViewController {
     weak var delegateKeyboardView: KeyboardView!
     var smilesArr: [UIImage] = []
     
+    var capsLockOn = true
+    
     var smilesImageNames: [String] = []
     var hasAccess: Bool {
         get {
@@ -34,11 +36,9 @@ class KeyboardViewController: UIInputViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-//        let nib = UINib(nibName: "KeyboardView", bundle: nil)
-//        let objects = nib.instantiate(withOwner: nil, options: nil)
-//        delegateKeyboardView = objects.first as? KeyboardView
         
         delegateKeyboardView = KeyboardView.instanceFromNib()
+        delegateKeyboardView.charSet2.isHidden = true
         delegateKeyboardView.collectionView.register(UINib.init(nibName: "KeyboardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "KeyboardCollectionViewCell")
         delegateKeyboardView.collectionView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(delegateKeyboardView)
@@ -56,23 +56,76 @@ class KeyboardViewController: UIInputViewController {
             ])
         
         delegateKeyboardView.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
-        delegateKeyboardView.backspaceButton.addTarget(self, action: #selector(backspace), for: .touchUpInside)
-        delegateKeyboardView.spacebarButton.addTarget(self, action: #selector(spacebar), for: .touchUpInside)
+        
+        if !hasAccess {
+            delegateKeyboardView.fullAccessView.descriptionLabel.text = "Please, allow full access to send emoji.\n Settings -> General -> Keyboard -> Keyboards -> Add new keyboard"
+            delegateKeyboardView.fullAccessView.alpha = 1
+        }
     }
     
-    @objc func spacebar() {
+    @IBAction func spacebarAction(_ sender: Any) {
         textDocumentProxy.insertText(" ")
     }
     
-    @objc func backspace() {
-        let proxy = textDocumentProxy as UITextDocumentProxy
-        proxy.deleteBackward()
+    @IBAction func alphabetAction(_ sender: Any) {
+        delegateKeyboardView.alphabetView.isHidden = !delegateKeyboardView.alphabetView.isHidden
     }
     
-    override func textWillChange(_ textInput: UITextInput?) {
+    @IBAction func backspaceAction(_ sender: Any) {
+        (textDocumentProxy as UIKeyInput).deleteBackward()
     }
     
-    override func textDidChange(_ textInput: UITextInput?) {
+    @IBAction func keyPressed(button: UIButton) {
+        let string = button.titleLabel!.text
+        (textDocumentProxy as UIKeyInput).insertText("\(string!)")
+        
+        button.transform = CGAffineTransform.identity
+        UIView.animate(withDuration: 0.2, animations: {
+            button.transform = CGAffineTransform(scaleX: 2.0, y: 2.0)
+        }, completion: {(_) -> Void in
+            button.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+        })
+    }
+    
+    @IBAction func capsLockPressed(button: UIButton) {
+        capsLockOn = !capsLockOn
+        
+        changeCaps(containerView: delegateKeyboardView.row1)
+        changeCaps(containerView: delegateKeyboardView.row2)
+        changeCaps(containerView: delegateKeyboardView.row3)
+        changeCaps(containerView: delegateKeyboardView.row4)
+    }
+    
+    @IBAction func charSetPressed(button: UIButton) {
+        if button.titleLabel!.text == "1/2" {
+            delegateKeyboardView.charSet1.isHidden = true
+            delegateKeyboardView.charSet2.isHidden = false
+            button.setTitle("2/2", for: .normal)
+        } else if button.titleLabel!.text == "2/2" {
+            delegateKeyboardView.charSet1.isHidden = false
+            delegateKeyboardView.charSet2.isHidden = true
+            button.setTitle("1/2", for: .normal)
+        }
+    }
+    
+    @IBAction func returnPressed(button: UIButton) {
+        (textDocumentProxy as UIKeyInput).insertText("\n")
+    }
+    
+    func changeCaps(containerView: UIView) {
+        for view in containerView.subviews {
+            if let button = view as? UIButton {
+                if let buttonTitle = button.titleLabel?.text {
+                    if capsLockOn {
+                        let text = buttonTitle.uppercased()
+                        button.setTitle("\(text)", for: .normal)
+                    } else {
+                        let text = buttonTitle.lowercased()
+                        button.setTitle("\(text)", for: .normal)
+                    }
+                }
+            }
+        }
     }
     
     func fillSmilesArr() {
@@ -110,15 +163,6 @@ extension KeyboardViewController: UICollectionViewDelegate, UICollectionViewData
             let imageName = smilesImageNames[indexPath.row]
             let image = UIImage(named: imageName)
             UIPasteboard.general.image = image
-        } else {
-            delegateKeyboardView.fullAccessView.descriptionLabel.text = "Please, allow full access to send emoji"
-            UIView.animate(withDuration: 0.3, delay: 0, options: [], animations: {
-                self.delegateKeyboardView.fullAccessView.alpha = 1
-            }) { (finished) in
-                UIView.animate(withDuration: 0.3, delay: 1, options: [], animations: {
-                    self.delegateKeyboardView.fullAccessView.alpha = 0
-                }, completion: nil)
-            }
         }
     }
     

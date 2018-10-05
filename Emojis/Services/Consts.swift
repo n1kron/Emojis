@@ -10,5 +10,4 @@ import UIKit
 
 class Consts {
     static let isIpad: Bool = UIDevice.current.userInterfaceIdiom == .pad
-    
 }
