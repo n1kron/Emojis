@@ -32,7 +32,6 @@
 		996F5C37213966FB008BA54F /* EmojiKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 996F5C30213966FB008BA54F /* EmojiKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		996F5C4421396FDB008BA54F /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 996F5C4321396FDB008BA54F /* KeyboardView.xib */; };
 		996F5C4521396FE5008BA54F /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 996F5C4321396FDB008BA54F /* KeyboardView.xib */; };
-		996F5C4621397DE7008BA54F /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5C32213966FB008BA54F /* KeyboardViewController.swift */; };
 		996F5C4821398E90008BA54F /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5C4721398E90008BA54F /* KeyboardView.swift */; };
 		996F5C492139910B008BA54F /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5C4721398E90008BA54F /* KeyboardView.swift */; };
 		996F5C4B21399460008BA54F /* KeyboardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 996F5C4A21399460008BA54F /* KeyboardCollectionViewCell.xib */; };
@@ -47,6 +46,8 @@
 		99C0C04B21457E25000AF5BC /* Pods_EmojiKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BA8BF5742B1E84D2D1BC1E /* Pods_EmojiKeyboard.framework */; };
 		99FE5817216543CF006CA0E9 /* FullAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE5816216543CF006CA0E9 /* FullAccessView.swift */; };
 		99FE5818216543D8006CA0E9 /* FullAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE5816216543CF006CA0E9 /* FullAccessView.swift */; };
+		99FE583121693739006CA0E9 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5C32213966FB008BA54F /* KeyboardViewController.swift */; };
+		99FE5832216943DE006CA0E9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 996F5C34213966FB008BA54F /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -533,6 +534,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99FE5832216943DE006CA0E9 /* Info.plist in Resources */,
 				996F5C4521396FE5008BA54F /* KeyboardView.xib in Resources */,
 				999A311F213DA066000D3993 /* Assets.xcassets in Resources */,
 				996F5C4F2139B703008BA54F /* KeyboardCollectionViewCell.xib in Resources */,
@@ -632,10 +634,10 @@
 				99165EF921408A6100B5E71D /* TabBarViewController.swift in Sources */,
 				99165EFB21408C8300B5E71D /* SmileysViewController.swift in Sources */,
 				99165F682141787900B5E71D /* Utiles.swift in Sources */,
+				99FE583121693739006CA0E9 /* KeyboardViewController.swift in Sources */,
 				996F5C4821398E90008BA54F /* KeyboardView.swift in Sources */,
 				9900119B21433230004A713C /* OnboardingViewController.swift in Sources */,
 				1BCB83F12151587800B8B3DE /* SubscriptionManager.swift in Sources */,
-				996F5C4621397DE7008BA54F /* KeyboardViewController.swift in Sources */,
 				99165F662141769B00B5E71D /* HorrorViewController.swift in Sources */,
 				999A312921402F63000D3993 /* ExplanationsViewController.swift in Sources */,
 				999A3121213FF1AF000D3993 /* InformationViewController.swift in Sources */,

@@ -36,7 +36,6 @@ class KeyboardViewController: UIInputViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        
         delegateKeyboardView = KeyboardView.instanceFromNib()
         delegateKeyboardView.charSet2.isHidden = true
         delegateKeyboardView.collectionView.register(UINib.init(nibName: "KeyboardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "KeyboardCollectionViewCell")
@@ -178,12 +177,9 @@ extension KeyboardViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "KeyboardCollectionViewCell", for: indexPath) as! KeyboardCollectionViewCell
-        DispatchQueue.main.async {
-            let imageName = self.smilesImageNames[indexPath.row]
-            let image = UIImage(named: imageName)
-            cell.imageView.image = image
-        }
-
+        let imageName = self.smilesImageNames[indexPath.row]
+        let image = UIImage(named: imageName)
+        cell.imageView.image = image
         return cell
     }
 }
