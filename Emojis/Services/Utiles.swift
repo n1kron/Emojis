@@ -14,7 +14,7 @@ class Utiles {
     
     func configureFlowLayout(_ collectionView : UICollectionView) {
         let collectionViewLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
-        collectionViewLayout?.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
+        collectionViewLayout?.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         collectionViewLayout?.itemSize = CGSize(width: UIScreen.main.bounds.size.width * 0.2, height: UIScreen.main.bounds.size.width * 0.2)
         collectionViewLayout?.invalidateLayout()
     }

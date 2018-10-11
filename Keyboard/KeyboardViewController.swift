@@ -1,20 +1,18 @@
 //
 //  KeyboardViewController.swift
-//  EmojiKeyboard
+//  Keyboard
 //
-//  Created by  Kostantin Zarubin on 31.08.2018.
+//  Created by  Kostantin Zarubin on 11/10/2018.
 //  Copyright © 2018  Kostantin Zarubin. All rights reserved.
 //
 import UIKit
 
 class KeyboardViewController: UIInputViewController {
-
+    
     weak var delegateKeyboardView: KeyboardView!
-    var smilesArr: [UIImage] = []
-    
     var capsLockOn = true
-    
     var smilesImageNames: [String] = []
+    
     var hasAccess: Bool {
         get {
             if #available(iOS 11.0, *) {
@@ -27,6 +25,7 @@ class KeyboardViewController: UIInputViewController {
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
+        
     }
     
     override func viewDidLoad() {
@@ -36,23 +35,16 @@ class KeyboardViewController: UIInputViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        delegateKeyboardView = KeyboardView.instanceFromNib()
+        delegateKeyboardView = UINib(nibName: "KeyboardView", bundle: nil).instantiate(withOwner: self, options: nil)[0] as? KeyboardView
         delegateKeyboardView.charSet2.isHidden = true
         delegateKeyboardView.collectionView.register(UINib.init(nibName: "KeyboardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "KeyboardCollectionViewCell")
         delegateKeyboardView.collectionView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(delegateKeyboardView)
+        view = delegateKeyboardView
         
         delegateKeyboardView.collectionView.delegate = self
         delegateKeyboardView.collectionView.dataSource = self
         fillSmilesArr()
         delegateKeyboardView.collectionView.reloadData()
-        
-        NSLayoutConstraint.activate([
-            delegateKeyboardView.leftAnchor.constraint(equalTo: (inputView?.leftAnchor)!),
-            delegateKeyboardView.topAnchor.constraint(equalTo: (inputView?.topAnchor)!),
-            delegateKeyboardView.rightAnchor.constraint(equalTo: (inputView?.rightAnchor)!),
-            delegateKeyboardView.bottomAnchor.constraint(equalTo: (inputView?.bottomAnchor)!)
-            ])
         
         delegateKeyboardView.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
         
@@ -130,9 +122,8 @@ class KeyboardViewController: UIInputViewController {
     func fillSmilesArr() {
         smilesImageNames.removeAll()
         let imageNames = (0...361).map { "emojis\($0)" }
-        smilesImageNames.append(contentsOf: imageNames)
+        self.smilesImageNames.append(contentsOf: imageNames)
     }
-    
 }
 
 extension KeyboardViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -146,7 +137,7 @@ extension KeyboardViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsetsMake(10, 10, 10, 10)
+        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -177,9 +168,11 @@ extension KeyboardViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "KeyboardCollectionViewCell", for: indexPath) as! KeyboardCollectionViewCell
-        let imageName = self.smilesImageNames[indexPath.row]
-        let image = UIImage(named: imageName)
-        cell.imageView.image = image
+            let imageName = self.smilesImageNames[indexPath.row]
+            let image = UIImage(named: imageName)
+                cell.imageView.image = image
+           
+        
         return cell
     }
 }

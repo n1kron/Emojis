@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Kingfisher
 
 class SmileysViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!

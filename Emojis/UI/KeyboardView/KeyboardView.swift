@@ -27,10 +27,6 @@ class KeyboardView: UIView {
     @IBOutlet weak var charSet1: UIView!
     @IBOutlet weak var charSet2: UIView!
     
-    class func instanceFromNib() -> KeyboardView {
-        return UINib(nibName: "KeyboardView", bundle: nil).instantiate(withOwner: KeyboardViewController(), options: nil)[0] as! KeyboardView
-    }
-    
     override func awakeFromNib() {
         self.frame.size.height = UIScreen.main.bounds.size.height / 2.7
         self.frame.size.width = UIScreen.main.bounds.size.width
